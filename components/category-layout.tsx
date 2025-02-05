@@ -8,6 +8,8 @@ import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import type React from "react"
 import { SortFilterPopup } from "./sort-filter-popup"
+import { EffectText } from "./effect-text"
+import Image from "next/image"
 
 interface CategoryLayoutProps {
   title: string
@@ -130,18 +132,29 @@ export function CategoryLayout({ title, items: initialItems, children, showRarit
                   }`}
                 >
                   <h3 className="font-semibold">{item.name}</h3>
-                  <p className="text-sm text-white/50">{item.description}</p>
+                  <EffectText text={item.description} className="text-sm text-white/50" />
                   {item.rarity && (
-                    <p className="mt-1 text-xs text-white/40">
-                      ✨ {item.rarity}
-                    </p>
+                    <div className="mt-1 flex items-center gap-2">
+                      <Image
+                        src={`/assets/rarity/${item.rarity.toLowerCase()}.png`}
+                        alt={item.rarity}
+                        width={16}
+                        height={16}
+                      />
+                      <p className="text-xs text-white/40">
+                        {item.rarity}
+                      </p>
+                    </div>
                   )}
                   {item.unlockRequirement && 
                    !item.unlockRequirement.toLowerCase().includes("available from start") && 
                    !item.unlockRequirement.toLowerCase().includes("no requirement needed") && (
-                    <p className="mt-2 text-xs text-white/30">
-                      🔓 {item.unlockRequirement}
-                    </p>
+                    <>
+                      {item.rarity && <div className="my-2 border-t border-white/10" />}
+                      <p className="text-xs text-white/30">
+                        🔓 {item.unlockRequirement}
+                      </p>
+                    </>
                   )}
                 </button>
               ))}

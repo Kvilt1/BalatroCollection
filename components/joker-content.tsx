@@ -116,8 +116,14 @@ export function JokerContent({ data }: JokerContentProps) {
 
         <div className="flex flex-wrap gap-2 mb-6">
           {selected.rarity && (
-            <span className="card-tag rarity">
-              ✨ {selected.rarity}
+            <span className="card-tag rarity flex items-center gap-2">
+              <Image
+                src={`/assets/rarity/${selected.rarity.toLowerCase()}.png`}   
+                alt={selected.rarity}
+                width={16}
+                height={16}
+              />
+              {selected.rarity}
             </span>
           )}
           {selected.cost && (

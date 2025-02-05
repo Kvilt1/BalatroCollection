@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { CategoryLayout } from "@/components/category-layout"
 import data from '../../consolidated_balatro_data.json'
+import { EffectText } from "@/components/effect-text"
 
 interface ItemData {
   id: string
@@ -48,7 +49,7 @@ export default function TagsPage() {
         </div>
         <div>
           <h3 className="text-xl font-semibold text-white mb-2">Effect</h3>
-          <p className="text-white/90">{selected.effect}</p>
+          <EffectText text={selected.effect} />
         </div>
         {selected.rarity && (
           <div>

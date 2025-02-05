@@ -73,52 +73,52 @@ body {
 
 /* Text highlighting classes */
 .hl-orange {
-  color: #ff8f00;
+  color: #cc7200;
 }
 
 .hl-yellow {
-  color: #f5b244;
+  color: #c48d35;
 }
 
 .hl-green {
-  color: #35bd86;
+  color: #2b9b6f;
 }
 
 .hl-red {
-  color: #ff4c40;
+  color: #cc3d33;
 }
 
 .hl-gray, .hl-grey {
-  color: #b1b1b1;
+  color: #8a8a8a;
 }
 
 .hl-purple {
-  color: #7b559c;
+  color: #63457d;
 }
 
 .hl-cyan {
-  color: #00a8ca;
+  color: #0088a1;
 }
 
 .hl-blue {
-  color: #009dff;
+  color: #007acc;
 }
 
 .hl-sblue {
-  color: #2e76fd;
+  color: #2561cc;
 }
 
 .hl-chips {
-  color: #0093ff;
+  color: #0076cc;
 }
 
 .hl-mult {
-  color: #ff4c40;
+  color: #cc3d33;
 }
 
 .hl-xmult {
   color: #fff;
-  background-color: #ff4c40;
+  background-color: #cc3d33;
   border-radius: 0.4em;
   padding: 0 0.4ch;
 }
