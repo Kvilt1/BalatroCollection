@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { ChevronRight, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
@@ -46,73 +47,73 @@ const categories = [
   {
     name: "Vouchers",
     description: "Special items that modify gameplay",
-    icon: "🎫",
+    icon: "/assets/voucher.png",
     href: "/vouchers",
   },
   {
     name: "Voucher Plus",
     description: "Upgraded versions of Vouchers",
-    icon: "⭐",
+    icon: "/assets/voucherplus.png",
     href: "/vouchers-plus",
   },
   {
     name: "Spectral Cards",
     description: "Mystical cards with unique effects",
-    icon: "👻",
+    icon: "/assets/spectral.png",
     href: "/spectral",
   },
   {
     name: "Seals",
     description: "Powerful modifiers for your cards",
-    icon: "🔒",
+    icon: "/assets/seals.png",
     href: "/seals",
   },
   {
     name: "Jokers",
     description: "Special cards that grant unique abilities",
-    icon: "🃏",
+    icon: "/assets/jokers.png",
     href: "/jokers",
   },
   {
     name: "Boosters",
     description: "Card packs with various effects",
-    icon: "📦",
+    icon: "/assets/booster.png",
     href: "/boosters",
   },
   {
     name: "Planets",
     description: "Celestial cards with powerful effects",
-    icon: "🌍",
+    icon: "/assets/planet.png",
     href: "/planets",
   },
   {
     name: "Tarot",
     description: "Mystical cards that alter your deck",
-    icon: "🎴",
+    icon: "/assets/tarot.png",
     href: "/tarot",
   },
   {
     name: "Enhancements",
     description: "Modifications for your playing cards",
-    icon: "⚡",
+    icon: "/assets/enhancement.png",
     href: "/enhancements",
   },
   {
     name: "Tags",
     description: "Special modifiers for your run",
-    icon: "🏷️",
+    icon: "/assets/tag.png",
     href: "/tags",
   },
   {
     name: "Blinds",
     description: "Challenges to overcome",
-    icon: "🎯",
+    icon: "/assets/blinds.png",
     href: "/blind",
   },
   {
     name: "Decks",
     description: "Different starting configurations",
-    icon: "🎴",
+    icon: "/assets/decks.png",
     href: "/decks",
   },
 ]
@@ -174,7 +175,14 @@ export default function HomePage() {
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <span className="text-2xl mb-2 block">{category.icon}</span>
+                    <div className="w-12 h-12 mb-2 relative">
+                      <Image
+                        src={category.icon}
+                        alt={category.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                     <h2 className="text-xl font-semibold text-white mb-2">{category.name}</h2>
                     <p className="text-sm text-gray-300">{category.description}</p>
                   </div>

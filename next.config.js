@@ -3,6 +3,12 @@ const nextConfig = {
   output: 'export',  // Enable static exports
   images: {
     unoptimized: true,  // Required for static export
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   trailingSlash: true,  // Better for static hosting
   compress: true,  // Enable compression
