@@ -814,7 +814,7 @@
                 "id": "enhancements_1",
                 "name": "Bonus",
                 "appearance": "enhancer_bonus.png",
-                "effect": "+30 extra chips",
+                "effect": "<b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b>",
                 "category": "Enhancement",
                 "type": null,
                 "rarity": null,
@@ -840,7 +840,7 @@
                 "id": "enhancements_3",
                 "name": "Gold",
                 "appearance": "enhancer_gold.png",
-                "effect": "$3 if this card is held in hand at end of round",
+                "effect": "<b><span class=\"hl-mult\">+1</span>&nbsp;Mult</b> and <span class=\"hl-chips\"><b>+15</b></span>&nbsp;<b>Chips</b>",
                 "category": "Enhancement",
                 "type": null,
                 "rarity": null,
@@ -866,7 +866,7 @@
                 "id": "enhancements_5",
                 "name": "Mult",
                 "appearance": "enhancer_mult.png",
-                "effect": "+4 Mult",
+                "effect": "<b><span class=\"hl-mult\">+2</span>&nbsp;Mult</b> and <span class=\"hl-chips\"><b>+20</b></span>&nbsp;<b>Chips</b>",
                 "category": "Enhancement",
                 "type": null,
                 "rarity": null,
@@ -928,7 +928,7 @@
                 "type": null,
                 "rarity": "Common",
                 "cost": "$2",
-                "unlock_requirement": "Play Black deck 2 times • Play Yellow deck.",
+                "unlock_requirement": "Available from start.",
                 "additional": null,
                 "related_items": []
             },
@@ -1331,7 +1331,7 @@
                 "type": null,
                 "rarity": "Uncommon",
                 "cost": "$7",
-                "unlock_requirement": "Available from start. (Will not appear in the shop unless the player has a Steel Card in their deck.)",
+                "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Steel Card in the deck.)",
                 "additional": null,
                 "related_items": []
             },
@@ -1708,7 +1708,7 @@
                 "type": null,
                 "rarity": "Common",
                 "cost": "$4",
-                "unlock_requirement": "Available from start. (Will not appear in the shop unless Michel Gros Michel has destroyed itself during the current run.)",
+                "unlock_requirement": "Available from start. (Can only appear in the shop when Gros Michel has destroyed itself in the current run.)",
                 "additional": null,
                 "related_items": []
             },
@@ -2072,7 +2072,7 @@
                 "type": null,
                 "rarity": "Uncommon",
                 "cost": "$6",
-                "unlock_requirement": "Available from start. (Will not appear in the shop unless the player has a Stone Card in their deck.)",
+                "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Stone Card in the deck.)",
                 "additional": null,
                 "related_items": []
             },
@@ -2098,7 +2098,7 @@
                 "type": null,
                 "rarity": "Uncommon",
                 "cost": "$6",
-                "unlock_requirement": "Available from start. (Will not appear in the shop unless the player has a Lucky Card in their deck.)",
+                "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Lucky Card in the deck.)",
                 "additional": null,
                 "related_items": []
             },
@@ -2293,7 +2293,7 @@
                 "type": null,
                 "rarity": "Common",
                 "cost": "$5",
-                "unlock_requirement": "Play a 5 card hand that contains only Gold cards. (The player must also have a Gold Card in their deck for it to appear in the shop.)\t",
+                "unlock_requirement": "Play a 5 card hand that contains only Gold cards. (Can only appear in the shop when there is a Gold Card in the deck.)\t",
                 "additional": null,
                 "related_items": []
             },
@@ -2475,7 +2475,7 @@
                 "type": null,
                 "rarity": "Uncommon",
                 "cost": "$6",
-                "unlock_requirement": "Have 5 or more Glass cards in your deck. (The player must also have a Glass Card in their deck for it to appear in the shop.)",
+                "unlock_requirement": "Have 5 or more Glass cards in your deck. (Can only appear in the shop when there is a Glass Card in the deck.)\t",
                 "additional": null,
                 "related_items": []
             },
@@ -2807,7 +2807,7 @@
             {
                 "id": "jokers_146",
                 "name": "Canio",
-                "appearance": "caino.png",
+                "appearance": "canio.png",
                 "effect": "Gain <b><span class=\"hl-xmult\">X1</span>&nbsp;Mult</b> when a <span class=\"hl-orange\"><b>face card</b></span> is destroyed",
                 "category": "Joker",
                 "type": null,

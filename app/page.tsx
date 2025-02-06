@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { ChevronRight, Search } from "lucide-react"
+import { ChevronRight, Search, Heart } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import data from '../consolidated_balatro_data.json'
 
@@ -141,7 +141,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-950 to-slate-950">
       <div className="max-w-4xl mx-auto p-6">
-        <h1 className="text-4xl font-bold text-white mb-8">Card Compendium</h1>
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-4xl font-bold text-white">Card Compendium</h1>
+          <Link 
+            href="/favorites" 
+            className="flex items-center gap-2 px-4 py-2 text-white bg-black/20 rounded-lg hover:bg-black/30 transition-colors"
+          >
+            <Heart className="w-5 h-5" />
+            Favorites
+          </Link>
+        </div>
         <div className="relative mb-8">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white/50" />
           <Input

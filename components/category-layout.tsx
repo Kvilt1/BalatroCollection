@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeft, Search, Circle } from "lucide-react"
+import { ArrowLeft, Search, Circle, Heart } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Input } from "@/components/ui/input"
@@ -10,6 +10,9 @@ import type React from "react"
 import { SortFilterPopup } from "./sort-filter-popup"
 import { EffectText } from "./effect-text"
 import Image from "next/image"
+import { useFavorites } from "@/contexts/favorites-context"
+import { useInView } from "react-intersection-observer"
+import { UnlockRequirement } from "./unlock-requirement"
 
 interface CategoryLayoutProps {
   title: string
@@ -19,20 +22,52 @@ interface CategoryLayoutProps {
     description: string
     rarity?: string
     unlockRequirement?: string
+    type?: string
     selected?: boolean
     onClick?: () => void
+    cost?: number
   }[]
   children: React.ReactNode
   showRarityFilter?: boolean
+  showTypeFilter?: boolean
+  highlightText?: (text: string) => string
 }
 
-export function CategoryLayout({ title, items: initialItems, children, showRarityFilter = false }: CategoryLayoutProps) {
+const ITEMS_PER_PAGE = 20
+
+export function CategoryLayout({ 
+  title, 
+  items: initialItems, 
+  children, 
+  showRarityFilter = false,
+  showTypeFilter = false,
+  highlightText
+}: CategoryLayoutProps) {
   const [items, setItems] = useState(initialItems)
-  const [sortBy, setSortBy] = useState("name")
+  const [displayedItems, setDisplayedItems] = useState(initialItems.slice(0, ITEMS_PER_PAGE))
+  const [page, setPage] = useState(1)
+  const [sortBy, setSortBy] = useState("id")
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [showUnlockable, setShowUnlockable] = useState(false)
   const [selectedRarities, setSelectedRarities] = useState<string[]>([])
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [showUnlocks, setShowUnlocks] = useState(true)
   const searchParams = useSearchParams()
+  const { favorites, toggleFavorite, isFavorite } = useFavorites()
+  
+  const { ref, inView } = useInView({
+    threshold: 0,
+    rootMargin: '100px',
+  })
+
+  useEffect(() => {
+    if (inView) {
+      const nextItems = items.slice(0, (page + 1) * ITEMS_PER_PAGE)
+      setDisplayedItems(nextItems)
+      setPage(page + 1)
+    }
+  }, [inView, items, page])
 
   useEffect(() => {
     const cardFromUrl = searchParams?.get("card")
@@ -45,11 +80,13 @@ export function CategoryLayout({ title, items: initialItems, children, showRarit
     }
   }, [searchParams, items])
 
-  const handleSort = (newSortBy: string) => {
+  const handleSort = (newSortBy: string, direction: 'asc' | 'desc') => {
     setSortBy(newSortBy)
+    setSortDirection(direction)
     const sortedItems = [...items].sort((a, b) => {
+      let comparison = 0
       if (newSortBy === "name") {
-        return a.name.localeCompare(b.name)
+        comparison = a.name.localeCompare(b.name)
       } else if (newSortBy === "rarity") {
         const rarityOrder: { [key: string]: number } = {
           "Common": 0,
@@ -59,24 +96,46 @@ export function CategoryLayout({ title, items: initialItems, children, showRarit
         }
         const aRarity = a.rarity || "Common"
         const bRarity = b.rarity || "Common"
-        return rarityOrder[aRarity] - rarityOrder[bRarity]
+        comparison = rarityOrder[aRarity] - rarityOrder[bRarity]
+      } else if (newSortBy === "id") {
+        comparison = a.id.localeCompare(b.id)
+      } else if (newSortBy === "type") {
+        const typeOrder: { [key: string]: number } = {
+          "+c": 0,
+          "+m": 1,
+          "Xm": 2,
+          "++": 3,
+          "!!": 4,
+          "...": 5,
+          "+$": 6
+        }
+        const aType = a.type || ""
+        const bType = b.type || ""
+        comparison = (typeOrder[aType] ?? 999) - (typeOrder[bType] ?? 999)
       }
-      return 0
+      return direction === 'asc' ? comparison : -comparison
     })
     setItems(sortedItems)
+    setDisplayedItems(sortedItems.slice(0, ITEMS_PER_PAGE))
+    setPage(1)
   }
 
   const handleFilter = (showUnlockable: boolean) => {
     setShowUnlockable(showUnlockable)
-    applyFilters(showUnlockable, selectedRarities)
+    applyFilters(showUnlockable, selectedRarities, selectedTypes)
   }
 
   const handleRarityFilter = (rarities: string[]) => {
     setSelectedRarities(rarities)
-    applyFilters(showUnlockable, rarities)
+    applyFilters(showUnlockable, rarities, selectedTypes)
   }
 
-  const applyFilters = (unlockable: boolean, rarities: string[]) => {
+  const handleTypeFilter = (types: string[]) => {
+    setSelectedTypes(types)
+    applyFilters(showUnlockable, selectedRarities, types)
+  }
+
+  const applyFilters = (unlockable: boolean, rarities: string[], types: string[]) => {
     let filteredItems = [...initialItems]
 
     // Apply unlock requirement filter
@@ -99,7 +158,16 @@ export function CategoryLayout({ title, items: initialItems, children, showRarit
       )
     }
 
+    // Apply type filter
+    if (types.length > 0) {
+      filteredItems = filteredItems.filter(item =>
+        item.type && types.includes(item.type)
+      )
+    }
+
     setItems(filteredItems)
+    setDisplayedItems(filteredItems.slice(0, ITEMS_PER_PAGE))
+    setPage(1)
   }
 
   return (
@@ -109,59 +177,100 @@ export function CategoryLayout({ title, items: initialItems, children, showRarit
           <Link href="/" className="text-white/50 hover:text-white">
             ← Back to Categories
           </Link>
-          <SortFilterPopup 
-            onSortChange={handleSort} 
-            onFilterChange={handleFilter}
-            onRarityFilterChange={handleRarityFilter}
-            showRarityFilter={showRarityFilter}
-          />
+          <div className="flex items-center gap-4">
+            <Link href="/favorites" className="text-white/50 hover:text-white">
+              <Heart className="w-5 h-5" />
+            </Link>
+            <label className="flex items-center gap-2 text-sm text-white/50">
+              <input
+                type="checkbox"
+                checked={showUnlocks}
+                onChange={e => setShowUnlocks(e.target.checked)}
+                className="rounded border-white/20"
+              />
+              Show Unlocks
+            </label>
+            <SortFilterPopup 
+              onSortChange={handleSort} 
+              onFilterChange={handleFilter}
+              onRarityFilterChange={handleRarityFilter}
+              onTypeFilterChange={handleTypeFilter}
+              showRarityFilter={showRarityFilter}
+              showTypeFilter={showTypeFilter}
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[300px,1fr] gap-8">
-          <div className="bg-black/20 rounded-lg p-4 h-[calc(100vh-12rem)] flex flex-col">
+          <div className="bg-[#1a1a1a]/40 rounded-lg p-4 h-[calc(100vh-12rem)] flex flex-col">
             <h2 className="text-2xl font-bold text-white mb-4">{title}s</h2>
             <div className="overflow-y-auto flex-1 space-y-2 pr-2 custom-scrollbar">
-              {items.map((item) => (
-                <button
+              {displayedItems.map((item) => (
+                <div
                   key={item.id}
-                  onClick={item.onClick}
-                  className={`w-full text-left p-4 rounded-lg transition-colors ${
+                  className={`w-full text-left p-4 rounded-lg transition-colors relative group ${
                     item.id === selectedId
                       ? "bg-white/20 text-white"
-                      : "bg-black/20 text-white/70 hover:bg-black/30 hover:text-white"
+                      : "bg-[#1a1a1a]/40 text-white/70 hover:bg-[#1a1a1a]/60 hover:text-white"
                   }`}
                 >
-                  <h3 className="font-semibold">{item.name}</h3>
-                  <EffectText text={item.description} className="text-sm text-white/50" />
-                  {item.rarity && (
-                    <div className="mt-1 flex items-center gap-2">
-                      <Image
-                        src={`/assets/rarity/${item.rarity.toLowerCase()}.png`}
-                        alt={item.rarity}
-                        width={16}
-                        height={16}
-                      />
-                      <p className="text-xs text-white/40">
-                        {item.rarity}
-                      </p>
+                  <button
+                    onClick={item.onClick}
+                    className="w-full text-left"
+                  >
+                    <div className="space-y-3">
+                      <div>
+                        <h3 className="font-semibold">{item.name}</h3>
+                        <div className="h-px bg-white/5 mt-2" />
+                      </div>
+                      <EffectText text={item.description} className="text-sm text-white/50" highlight={highlightText} />
+                      {item.rarity && (
+                        <div>
+                          <div className="h-px bg-white/5 mb-2" />
+                          <div className="flex items-center gap-2">
+                            <span className={`card-tag flex items-center gap-2 bg-[#1a1a1a] border ${
+                              item.rarity === "Common" ? 'border-[#BCBCBC]' : 
+                              item.rarity === "Uncommon" ? 'border-[#55A383]' :
+                              item.rarity === "Rare" ? 'border-[#FD5F55]' :
+                              item.rarity === "Legendary" ? 'border-[#C886F0]' : 'border-white/20'
+                            }`}>
+                              <Image
+                                src={`/assets/rarity/${item.rarity?.toLowerCase()}.png`}
+                                alt={item.rarity || ''}
+                                width={16}
+                                height={16}
+                              />
+                              {item.rarity}
+                            </span>
+                          </div>
+                        </div>
+                      )}
+                      {showUnlocks && item.unlockRequirement && (
+                        <div>
+                          <div className="h-px bg-white/5 mb-2" />
+                          <UnlockRequirement requirement={item.unlockRequirement} />
+                        </div>
+                      )}
                     </div>
-                  )}
-                  {item.unlockRequirement && 
-                   !item.unlockRequirement.toLowerCase().includes("available from start") && 
-                   !item.unlockRequirement.toLowerCase().includes("no requirement needed") && (
-                    <>
-                      {item.rarity && <div className="my-2 border-t border-white/10" />}
-                      <p className="text-xs text-white/30">
-                        🔓 {item.unlockRequirement}
-                      </p>
-                    </>
-                  )}
-                </button>
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      toggleFavorite(item.id)
+                    }}
+                    className={`absolute top-2 right-2 p-1 transition-opacity ${
+                      isFavorite(item.id) ? 'text-red-500' : 'text-white/40'
+                    } opacity-0 group-hover:opacity-100 hover:scale-110`}
+                  >
+                    <Heart className="w-4 h-4 fill-current" />
+                  </button>
+                </div>
               ))}
+              <div ref={ref} className="h-4" />
             </div>
           </div>
 
-          <div className="bg-black/20 rounded-lg p-6">
+          <div className="bg-[#1a1a1a]/40 rounded-lg p-6">
             {children}
           </div>
         </div>

@@ -3,57 +3,63 @@
 import { useState } from "react"
 import Image from "next/image"
 import { CategoryLayout } from "@/components/category-layout"
+import data from '../../consolidated_balatro_data.json'
+import { EffectText } from "@/components/effect-text"
+import { UnlockRequirement } from "@/components/unlock-requirement"
 
-const decks = [
-  {
-    id: "magic",
-    name: "Magic",
-    description: "Start run with the Crystal Ball voucher active and two copies of The Fool",
-    effect: "Start run with the Crystal Ball voucher active and two copies of The Fool.",
-    unlockRequirement: "Win a run with Red Deck on any difficulty.",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/balatro-compendium-2-yrwocCQfNJRgTkNCIVoqBNwYqKEdLf.png",
-  },
-  {
-    id: "nebula",
-    name: "Nebula",
-    description: "Start run with the Telescope active",
-    effect: "Start run with the Telescope active",
-    unlockRequirement: "Complete specific challenge",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/balatro-compendium-2-yrwocCQfNJRgTkNCIVoqBNwYqKEdLf.png",
-  },
-]
+interface ItemData {
+  id: string
+  name: string
+  description: string
+  unlockRequirement?: string
+  selected: boolean
+  onClick: () => void
+}
 
 export default function DecksPage() {
-  const [selected, setSelected] = useState(decks[0])
+  const { image_folder, items } = data.Deck
+  const [selected, setSelected] = useState(items[0])
 
   return (
     <CategoryLayout
       title="Deck"
-      items={decks.map((deck) => ({
-        id: deck.id,
-        name: deck.name,
-        description: deck.description,
-        unlockRequirement: deck.unlockRequirement,
-        onClick: () => setSelected(deck),
-      }))}
+      items={items.map((item) => {
+        const itemData: ItemData = {
+          id: item.id,
+          name: item.name,
+          description: item.effect,
+          selected: item.id === selected.id,
+          onClick: () => setSelected(item),
+        }
+        if (item.unlock_requirement) {
+          itemData.unlockRequirement = item.unlock_requirement
+        }
+        return itemData
+      })}
     >
-      <div className="space-y-6">
-        <h2 className="text-3xl font-bold text-white">{selected.name}</h2>
-        <div className="flex justify-center">
-          <Image
-            src={selected.image || "/placeholder.svg"}
-            alt={selected.name}
-            width={200}
-            height={300}
-            className="rounded-lg"
-          />
+      <div className="relative h-full">
+        <div className="space-y-6 pb-16">
+          <h2 className="text-3xl font-bold text-white">{selected.name}</h2>
+          <div className="flex justify-center">
+            <Image
+              src={`${image_folder}${selected.appearance}`}
+              alt={selected.name}
+              width={200}
+              height={300}
+              className="rounded-lg"
+            />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">Effect</h3>
+            <EffectText text={selected.effect} />
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-2">Effect</h3>
-          <p className="text-white/90">{selected.effect}</p>
-        </div>
+
+        {selected.unlock_requirement && (
+          <div className="absolute bottom-0 left-0 right-0 bg-black/40">
+            <UnlockRequirement requirement={selected.unlock_requirement} />
+          </div>
+        )}
       </div>
     </CategoryLayout>
   )

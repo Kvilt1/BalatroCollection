@@ -1,0 +1,754 @@
+{
+  "Joker": [
+    {
+      "id": "jokers_1",
+      "name": "Joker",
+      "effect": "<b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b>"
+    },
+    {
+      "id": "jokers_2",
+      "name": "Greedy Joker",
+      "effect": "Played cards with <span style=\"color:#f15a27;\"><b>&nbsp;Diamond</b></span> suit give <b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_3",
+      "name": "Lusty Joker",
+      "effect": "Played cards with <span style=\"color:#f11b52;\"><b>&nbsp;Heart</b></span> suit give <b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_4",
+      "name": "Wrathful Joker",
+      "effect": "Played cards with <span style=\"color:#292189;\"><b>&nbsp;Spade</b></span> suit give <b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_5",
+      "name": "Gluttonous Joker",
+      "effect": "Played cards with <span style=\"color:#074540;\"><b>&nbsp;Club</b></span> suit give <b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_6",
+      "name": "Jolly Joker",
+      "effect": "<b><span class=\"hl-mult\">+8</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Pair</b></span>"
+    },
+    {
+      "id": "jokers_7",
+      "name": "Zany Joker",
+      "effect": "<b><span class=\"hl-mult\">+12</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Three of a Kind</b></span>"
+    },
+    {
+      "id": "jokers_8",
+      "name": "Mad Joker",
+      "effect": "<b><span class=\"hl-mult\">+10</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Two Pair</b></span>"
+    },
+    {
+      "id": "jokers_9",
+      "name": "Crazy Joker",
+      "effect": "<b><span class=\"hl-mult\">+12</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Straight</b></span>"
+    },
+    {
+      "id": "jokers_10",
+      "name": "Droll Joker",
+      "effect": "<b><span class=\"hl-mult\">+10</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Flush</b></span>"
+    },
+    {
+      "id": "jokers_11",
+      "name": "Sly Joker",
+      "effect": "<span class=\"hl-chips\"><b>+50</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Pair</b></span>"
+    },
+    {
+      "id": "jokers_12",
+      "name": "Wily Joker",
+      "effect": "<span class=\"hl-chips\"><b>+100</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Three of a Kind</b></span>"
+    },
+    {
+      "id": "jokers_13",
+      "name": "Clever Joker",
+      "effect": "<span class=\"hl-chips\"><b>+80</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Two Pair</b></span>"
+    },
+    {
+      "id": "jokers_14",
+      "name": "Devious Joker",
+      "effect": "<span class=\"hl-chips\"><b>+100</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Straight</b></span>"
+    },
+    {
+      "id": "jokers_15",
+      "name": "Crafty Joker",
+      "effect": "<span class=\"hl-chips\"><b>+80</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Flush</b></span>"
+    },
+    {
+      "id": "jokers_16",
+      "name": "Half Joker",
+      "effect": "<b><span class=\"hl-mult\">+20</span>&nbsp;Mult</b> if played hand contains <span class=\"hl-orange\"><b>3</b></span> or fewer cards"
+    },
+    {
+      "id": "jokers_17",
+      "name": "Joker Stencil",
+      "effect": "<b><span class=\"hl-xmult\">X1</span>&nbsp;Mult</b> for each empty <span class=\"hl-orange\"><b>Joker</b></span> slot"
+    },
+    {
+      "id": "jokers_18",
+      "name": "Four Fingers",
+      "effect": "All <span style=\"color:#ff8f00;\"><b>Flushes</b></span> and <span style=\"color:#ff8f00;\"><b>Straights</b></span> can be made with <span class=\"hl-orange\"><b>4</b></span> cards"
+    },
+    {
+      "id": "jokers_19",
+      "name": "Mime",
+      "effect": "Retrigger all card held in hand abilities"
+    },
+    {
+      "id": "jokers_20",
+      "name": "Credit Card",
+      "effect": "Go up to <span class=\"hl-yellow\"><b>-$20</b></span> in debt"
+    },
+    {
+      "id": "jokers_21",
+      "name": "Ceremonial Dagger",
+      "effect": "When <span class=\"hl-orange\"><b>Blind</b></span> is selected, destroy <span class=\"hl-orange\"><b>Joker</b></span> to the right and permanently add <span class=\"hl-orange\"><b>double</b></span> its sell value to this <span class=\"hl-orange\"><b>Mult</b></span>"
+    },
+    {
+      "id": "jokers_22",
+      "name": "Banner",
+      "effect": "<span class=\"hl-chips\"><b>+30</b></span>&nbsp;<b>Chips</b> for each remaining discard"
+    },
+    {
+      "id": "jokers_23",
+      "name": "Mystic Summit",
+      "effect": "<b><span class=\"hl-mult\">+15</span>&nbsp;Mult</b> when 0 discards remaining"
+    },
+    {
+      "id": "jokers_24",
+      "name": "Marble Joker",
+      "effect": "Adds one Stone card to the deck when Blind is selected"
+    },
+    {
+      "id": "jokers_25",
+      "name": "Loyalty Card",
+      "effect": "<b><span class=\"hl-xmult\">X4</span>&nbsp;Mult</b> every 6 hands played"
+    },
+    {
+      "id": "jokers_26",
+      "name": "8 Ball",
+      "effect": "<span class=\"hl-green\"><b>1 in 4</b></span> chance for each played <span class=\"hl-orange\"><b>8</b></span> to create a <span class=\"hl-purple\"><b>Tarot</b></span> card when scored<br><span style=\"color:#b1b1b1;\"><b>(Must have room)</b></span>"
+    },
+    {
+      "id": "jokers_27",
+      "name": "Misprint",
+      "effect": "<b><span class=\"hl-mult\">+0-23</span>&nbsp;Mult</b>"
+    },
+    {
+      "id": "jokers_28",
+      "name": "Dusk",
+      "effect": "Retrigger all played cards in <span class=\"hl-orange\"><b>final hand</b></span> of the round"
+    },
+    {
+      "id": "jokers_29",
+      "name": "Raised Fist",
+      "effect": "Adds <span class=\"hl-orange\"><b>double</b></span> the rank of <span class=\"hl-orange\"><b>lowest</b></span> ranked card held in hand to Mult"
+    },
+    {
+      "id": "jokers_30",
+      "name": "Chaos the Clown",
+      "effect": "<span class=\"hl-orange\"><b>1</b></span> free <span class=\"hl-green\"><b>Reroll</b></span> per shop"
+    },
+    {
+      "id": "jokers_31",
+      "name": "Fibonacci",
+      "effect": "Each played <span class=\"hl-orange\"><b>Ace</b></span>, <span class=\"hl-orange\"><b>2</b></span>, <span class=\"hl-orange\"><b>3</b></span>, <span class=\"hl-orange\"><b>5</b></span>, or <span class=\"hl-orange\"><b>8</b></span> gives <b><span class=\"hl-mult\">+8</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_32",
+      "name": "Steel Joker",
+      "effect": "Gives <b><span class=\"hl-xmult\">X0.2</span>&nbsp;Mult</b> for each <span class=\"hl-orange\"><b>Steel Card</b></span> in your <span class=\"hl-orange\"><b>full deck</b></span><br><span style=\"color:#b1b1b1;\"><b>(Currently <b><span class=\"hl-xmult\">X1</span>&nbsp;Mult</b>)</b></span>"
+    },
+    {
+      "id": "jokers_33",
+      "name": "Scary Face",
+      "effect": "Played <span class=\"hl-orange\"><b>face</b></span> cards give <span class=\"hl-chips\"><b>+30</b></span>&nbsp;<b>Chips</b> when scored"
+    },
+    {
+      "id": "jokers_34",
+      "name": "Abstract Joker",
+      "effect": "<b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> for each <span class=\"hl-orange\"><b>Joker</b></span> card<br><span style=\"color:#b1b1b1;\"><b>(Currently <b><span class=\"hl-mult\">+0</span>&nbsp;Mult</b>)</b></span>"
+    },
+    {
+      "id": "jokers_35",
+      "name": "Delayed Gratification",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$2</b></span> per discard if no discards are used by end of the round"
+    },
+    {
+      "id": "jokers_36",
+      "name": "Hack",
+      "effect": "Retrigger each played <span class=\"hl-orange\"><b>2</b></span>, <span class=\"hl-orange\"><b>3</b></span>, <span class=\"hl-orange\"><b>4</b></span>, or <span class=\"hl-orange\"><b>5</b></span>"
+    },
+    {
+      "id": "jokers_37",
+      "name": "Pareidolia",
+      "effect": "All cards are considered <span class=\"hl-orange\"><b>face</b></span> cards"
+    },
+    {
+      "id": "jokers_38",
+      "name": "Gros Michel",
+      "effect": "<b><span class=\"hl-mult\">+15</span>&nbsp;Mult</b> with <span class=\"hl-green\"><b>1 in 6</b></span> chance to be destroyed at end of round"
+    },
+    {
+      "id": "jokers_39",
+      "name": "Even Steven",
+      "effect": "Played cards with even rank give <b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_40",
+      "name": "Odd Todd",
+      "effect": "Played cards with odd rank give <span class=\"hl-chips\"><b>+31</b></span>&nbsp;<b>Chips</b> when scored"
+    },
+    {
+      "id": "jokers_41",
+      "name": "Scholar",
+      "effect": "Played Aces give <span class=\"hl-chips\"><b>+20</b></span>&nbsp;<b>Chips</b> and <b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_42",
+      "name": "Business Card",
+      "effect": "Played face cards have a <span class=\"hl-green\"><b>1 in 2</b></span> chance to give <span class=\"hl-yellow\"><b>$2</b></span> when scored"
+    },
+    {
+      "id": "jokers_43",
+      "name": "Supernova",
+      "effect": "Adds the number of times poker hand has been played this run to Mult"
+    },
+    {
+      "id": "jokers_44",
+      "name": "Ride the Bus",
+      "effect": "This Joker gains <b><span class=\"hl-mult\">+1</span>&nbsp;Mult</b> per consecutive hand played without a scoring face card"
+    },
+    {
+      "id": "jokers_45",
+      "name": "Space Joker",
+      "effect": "<span class=\"hl-green\"><b>1 in 4</b></span> chance to upgrade level of played poker hand"
+    },
+    {
+      "id": "jokers_46",
+      "name": "Egg",
+      "effect": "Gains <span class=\"hl-yellow\"><b>$3</b></span> of sell value at end of round"
+    },
+    {
+      "id": "jokers_47",
+      "name": "Burglar",
+      "effect": "When <span class=\"hl-orange\"><b>Blind</b></span> is selected, gain <span class=\"hl-orange\"><b>+3</b></span> Hands and lose all discards"
+    },
+    {
+      "id": "jokers_48",
+      "name": "Blackboard",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if all cards held in hand are <span style=\"color:#292189;\"><b>Spades</b></span> or <span style=\"color:#074540;\"><b>Clubs</b></span>"
+    },
+    {
+      "id": "jokers_49",
+      "name": "Runner",
+      "effect": "Gains <span class=\"hl-chips\"><b>+15</b></span>&nbsp;<b>Chips</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Straight</b></span>"
+    },
+    {
+      "id": "jokers_50",
+      "name": "Ice Cream",
+      "effect": "<span class=\"hl-chips\"><b>+100</b></span>&nbsp;<b>Chips</b> and <span class=\"hl-chips\"><b>-5</b></span>&nbsp;<b>Chips</b> for every hand played"
+    },
+    {
+      "id": "jokers_51",
+      "name": "DNA",
+      "effect": "If first hand of round has only <span class=\"hl-orange\"><b>1</b></span> card, add a permanent copy to deck and draw it to hand"
+    },
+    {
+      "id": "jokers_52",
+      "name": "Splash",
+      "effect": "Every played card counts in scoring"
+    },
+    {
+      "id": "jokers_53",
+      "name": "Blue Joker",
+      "effect": "<span class=\"hl-chips\"><b>+2</b></span>&nbsp;<b>Chips</b> for each remaining card in deck"
+    },
+    {
+      "id": "jokers_54",
+      "name": "Sixth Sense",
+      "effect": "If first hand of round is a single <span class=\"hl-orange\"><b>6</b></span>, destroy it and create a <span class=\"hl-sblue\"><b>Spectral</b></span> card"
+    },
+    {
+      "id": "jokers_55",
+      "name": "Constellation",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.1</span>&nbsp;Mult</b> every time a <span class=\"hl-cyan\"><b>Planet</b></span> card is used"
+    },
+    {
+      "id": "jokers_56",
+      "name": "Hiker",
+      "effect": "Every played card permanently gains <span class=\"hl-chips\"><b>+5</b></span>&nbsp;<b>Chips</b> when scored"
+    },
+    {
+      "id": "jokers_57",
+      "name": "Faceless Joker",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$5</b></span> if <span class=\"hl-orange\"><b>3</b></span> or more face cards are discarded at the same time"
+    },
+    {
+      "id": "jokers_58",
+      "name": "Green Joker",
+      "effect": "<b><span class=\"hl-mult\">+1</span>&nbsp;Mult</b> per hand played, <b><span class=\"hl-mult\">-1</span>&nbsp;Mult</b> per discard"
+    },
+    {
+      "id": "jokers_59",
+      "name": "Superposition",
+      "effect": "Create a <span class=\"hl-sblue\"><b>Tarot</b></span> card if poker hand contains an <span class=\"hl-orange\"><b>Ace</b></span> and a <span style=\"color:#ff8f00;\"><b>Straight</b></span>"
+    },
+    {
+      "id": "jokers_60",
+      "name": "To Do List",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$4</b></span> if poker hand is a <span style=\"color:#ff8f00;\"><b>[Poker Hand]</b></span>, poker hand changes at end of round"
+    },
+    {
+      "id": "jokers_61",
+      "name": "Cavendish",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> with <span class=\"hl-green\"><b>1 in 1000</b></span> chance to be destroyed at end of round"
+    },
+    {
+      "id": "jokers_62",
+      "name": "Card Sharp",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if played poker hand has already been played this round"
+    },
+    {
+      "id": "jokers_63",
+      "name": "Red Card",
+      "effect": "This Joker gains <b><span class=\"hl-mult\">+3</span>&nbsp;Mult</b> when any <span class=\"hl-orange\"><b>Booster Pack</b></span> is skipped"
+    },
+    {
+      "id": "jokers_64",
+      "name": "Madness",
+      "effect": "When <span class=\"hl-orange\"><b>Small Blind</b></span> or <span class=\"hl-orange\"><b>Big Blind</b></span> is selected, gain <b><span class=\"hl-xmult\">X0.5</span>&nbsp;Mult</b> and destroy a random Joker"
+    },
+    {
+      "id": "jokers_65",
+      "name": "Square Joker",
+      "effect": "This Joker gains <span class=\"hl-chips\"><b>+4</b></span>&nbsp;<b>Chips</b> if played hand has exactly <span class=\"hl-orange\"><b>4</b></span> cards"
+    },
+    {
+      "id": "jokers_66",
+      "name": "Séance",
+      "effect": "If poker hand is a <span style=\"color:#ff8f00;\"><b>Straight Flush</b></span>, create a random <span class=\"hl-sblue\"><b>Spectral</b></span> card"
+    },
+    {
+      "id": "jokers_67",
+      "name": "Riff-Raff",
+      "effect": "When <span class=\"hl-orange\"><b>Blind</b></span> is selected, create <span class=\"hl-orange\"><b>2</b></span> <span class=\"hl-blue\"><b>Common</b></span> Jokers"
+    },
+    {
+      "id": "jokers_68",
+      "name": "Vampire",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.1</span>&nbsp;Mult</b> per scoring <span class=\"hl-orange\"><b>Enhanced</b></span> card played, removes card <span class=\"hl-orange\"><b>Enhancement</b></span>"
+    },
+    {
+      "id": "jokers_69",
+      "name": "Shortcut",
+      "effect": "Allows <span style=\"color:#ff8f00;\"><b>Straights</b></span> to be made with gaps of <span class=\"hl-orange\"><b>1</b></span> rank"
+    },
+    {
+      "id": "jokers_70",
+      "name": "Hologram",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.25</span>&nbsp;Mult</b> every time a <span class=\"hl-orange\"><b>playing card</b></span> is added to your deck"
+    },
+    {
+      "id": "jokers_71",
+      "name": "Vagabond",
+      "effect": "Create a <span class=\"hl-sblue\"><b>Tarot</b></span> card if hand is played with <span class=\"hl-yellow\"><b>$4</b></span> or less"
+    },
+    {
+      "id": "jokers_72",
+      "name": "Baron",
+      "effect": "Each <span class=\"hl-orange\"><b>King</b></span> held in hand gives <b><span class=\"hl-xmult\">X1.5</span>&nbsp;Mult</b>"
+    },
+    {
+      "id": "jokers_73",
+      "name": "Cloud 9",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$1</b></span> for each <span class=\"hl-orange\"><b>9</b></span> in your <span class=\"hl-orange\"><b>full deck</b></span> at end of round"
+    },
+    {
+      "id": "jokers_74",
+      "name": "Rocket",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$1</b></span> at end of round. Payout increases by <span class=\"hl-yellow\"><b>$2</b></span> when <span class=\"hl-orange\"><b>Boss Blind</b></span> is defeated"
+    },
+    {
+      "id": "jokers_75",
+      "name": "Obelisk",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.2</span>&nbsp;Mult</b> per consecutive hand played without playing your <span class=\"hl-orange\"><b>most played</b></span> poker hand"
+    },
+    {
+      "id": "jokers_76",
+      "name": "Midas Mask",
+      "effect": "All played <span class=\"hl-orange\"><b>face</b></span> cards become <span class=\"hl-yellow\"><b>Gold</b></span> cards when scored"
+    },
+    {
+      "id": "jokers_77",
+      "name": "Luchador",
+      "effect": "Sell this card to disable the current <span class=\"hl-orange\"><b>Boss Blind</b></span>"
+    },
+    {
+      "id": "jokers_78",
+      "name": "Photograph",
+      "effect": "First played <span class=\"hl-orange\"><b>face</b></span> card gives <b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_79",
+      "name": "Gift Card",
+      "effect": "Add <span class=\"hl-yellow\"><b>$1</b></span> of sell value to every <span class=\"hl-orange\"><b>Joker</b></span> and <span class=\"hl-orange\"><b>Consumable</b></span> card at end of round"
+    },
+    {
+      "id": "jokers_80",
+      "name": "Turtle Bean",
+      "effect": "<span class=\"hl-orange\"><b>+5</b></span> hand size, reduces by <span class=\"hl-orange\"><b>1</b></span> each round"
+    },
+    {
+      "id": "jokers_81",
+      "name": "Erosion",
+      "effect": "<b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b> for each card below <span class=\"hl-orange\"><b>[the deck's starting size]</b></span> in your <span class=\"hl-orange\"><b>full deck</b></span>"
+    },
+    {
+      "id": "jokers_82",
+      "name": "Reserved Parking",
+      "effect": "Each <span class=\"hl-orange\"><b>face</b></span> card held in hand has a <span class=\"hl-green\"><b>1 in 2</b></span> chance to give <span class=\"hl-yellow\"><b>$1</b></span>"
+    },
+    {
+      "id": "jokers_83",
+      "name": "Mail-In Rebate",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$5</b></span> for each discarded <span class=\"hl-orange\"><b>[rank]</b></span>, rank changes every round"
+    },
+    {
+      "id": "jokers_84",
+      "name": "To the Moon",
+      "effect": "Earn an extra <span class=\"hl-yellow\"><b>$1</b></span> of interest for every <span class=\"hl-yellow\"><b>$5</b></span> you have at end of round"
+    },
+    {
+      "id": "jokers_85",
+      "name": "Hallucination",
+      "effect": "<span class=\"hl-green\"><b>1 in 2</b></span> chance to create a <span class=\"hl-sblue\"><b>Tarot</b></span> card when any <span class=\"hl-orange\"><b>Booster Pack</b></span> is opened"
+    },
+    {
+      "id": "jokers_86",
+      "name": "Fortune Teller",
+      "effect": "<b><span class=\"hl-mult\">+1</span>&nbsp;Mult</b> per <span class=\"hl-sblue\"><b>Tarot</b></span> card used this run"
+    },
+    {
+      "id": "jokers_87",
+      "name": "Juggler",
+      "effect": "<span class=\"hl-orange\"><b>+1</b></span> hand size"
+    },
+    {
+      "id": "jokers_88",
+      "name": "Drunkard",
+      "effect": "<span class=\"hl-orange\"><b>+1</b></span> discard each round"
+    },
+    {
+      "id": "jokers_89",
+      "name": "Stone Joker",
+      "effect": "Gives <span class=\"hl-chips\"><b>+25</b></span>&nbsp;<b>Chips</b> for each <span class=\"hl-orange\"><b>Stone Card</b></span> in your <span class=\"hl-orange\"><b>full deck</b></span>"
+    },
+    {
+      "id": "jokers_90",
+      "name": "Golden Joker",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$4</b></span> at end of round"
+    },
+    {
+      "id": "jokers_91",
+      "name": "Lucky Cat",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.25</span>&nbsp;Mult</b> every time a <span class=\"hl-orange\"><b>Lucky</b></span> card successfully triggers"
+    },
+    {
+      "id": "jokers_92",
+      "name": "Baseball Card",
+      "effect": "<span class=\"hl-green\"><b>Uncommon</b></span> Jokers each give <b><span class=\"hl-xmult\">X1.5</span>&nbsp;Mult</b>"
+    },
+    {
+      "id": "jokers_93",
+      "name": "Bull",
+      "effect": "<span class=\"hl-chips\"><b>+2</b></span>&nbsp;<b>Chips</b> for each <span class=\"hl-yellow\"><b>$1</b></span> you have"
+    },
+    {
+      "id": "jokers_94",
+      "name": "Diet Cola",
+      "effect": "Sell this card to create a free <span class=\"hl-orange\"><b>Double Tag</b></span>"
+    },
+    {
+      "id": "jokers_95",
+      "name": "Trading Card",
+      "effect": "If first discard of round has only <span class=\"hl-orange\"><b>1</b></span> card, destroy it and earn <span class=\"hl-yellow\"><b>$3</b></span>"
+    },
+    {
+      "id": "jokers_96",
+      "name": "Flash Card",
+      "effect": "This Joker gains <b><span class=\"hl-mult\">+2</span>&nbsp;Mult</b> per <span class=\"hl-orange\"><b>reroll</b></span> in the <span class=\"hl-orange\"><b>shop</b></span>"
+    },
+    {
+      "id": "jokers_97",
+      "name": "Popcorn",
+      "effect": "<b><span class=\"hl-mult\">+20</span>&nbsp;Mult</b> and <b><span class=\"hl-mult\">-4</span>&nbsp;Mult</b> per round played"
+    },
+    {
+      "id": "jokers_98",
+      "name": "Spare Trousers",
+      "effect": "This Joker gains <b><span class=\"hl-mult\">+2</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Two Pair</b></span>"
+    },
+    {
+      "id": "jokers_99",
+      "name": "Ancient Joker",
+      "effect": "Each played card with <span class=\"hl-orange\"><b>[suit]</b></span> gives <b><span class=\"hl-xmult\">X1.5</span>&nbsp;Mult</b> when scored, suit changes at end of round"
+    },
+    {
+      "id": "jokers_100",
+      "name": "Ramen",
+      "effect": "<b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b>, loses <b><span class=\"hl-xmult\">X0.01</span>&nbsp;Mult</b> per card discarded"
+    },
+    {
+      "id": "jokers_101",
+      "name": "Walkie Talkie",
+      "effect": "Each played <span class=\"hl-orange\"><b>10</b></span> or <span class=\"hl-orange\"><b>4</b></span> gives <span class=\"hl-chips\"><b>+10</b></span>&nbsp;<b>Chips</b> and <b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_102",
+      "name": "Seltzer",
+      "effect": "Retrigger all cards played for the next <span class=\"hl-orange\"><b>10</b></span> hands"
+    },
+    {
+      "id": "jokers_103",
+      "name": "Castle",
+      "effect": "This Joker gains <span class=\"hl-chips\"><b>+3</b></span>&nbsp;<b>Chips</b> per discarded <span class=\"hl-orange\"><b>[suit]</b></span> card, suit changes every round"
+    },
+    {
+      "id": "jokers_104",
+      "name": "Smiley Face",
+      "effect": "Played <span class=\"hl-orange\"><b>face</b></span> cards give <b><span class=\"hl-mult\">+5</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_105",
+      "name": "Campfire",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.25</span>&nbsp;Mult</b> for each card sold, resets when <span class=\"hl-orange\"><b>Boss Blind</b></span> is defeated"
+    },
+    {
+      "id": "jokers_106",
+      "name": "Golden Ticket",
+      "effect": "Played <span class=\"hl-yellow\"><b>Gold</b></span> cards earn <span class=\"hl-yellow\"><b>$4</b></span> when scored"
+    },
+    {
+      "id": "jokers_107",
+      "name": "Mr. Bones",
+      "effect": "Prevents <span class=\"hl-orange\"><b>Death</b></span> if chips scored are at least <span class=\"hl-orange\"><b>25%</b></span> of required chips, self destructs"
+    },
+    {
+      "id": "jokers_108",
+      "name": "Acrobat",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> on <span class=\"hl-orange\"><b>final</b></span> hand of round"
+    },
+    {
+      "id": "jokers_109",
+      "name": "Sock and Buskin",
+      "effect": "Retrigger all played <span class=\"hl-orange\"><b>face</b></span> cards"
+    },
+    {
+      "id": "jokers_110",
+      "name": "Swashbuckler",
+      "effect": "Adds the sell value of all other owned <span class=\"hl-orange\"><b>Jokers</b></span> to <span class=\"hl-orange\"><b>Mult</b></span>"
+    },
+    {
+      "id": "jokers_111",
+      "name": "Troubadour",
+      "effect": "<span class=\"hl-orange\"><b>+2</b></span> hand size, <span class=\"hl-orange\"><b>-1</b></span> hand per round"
+    },
+    {
+      "id": "jokers_112",
+      "name": "Certificate",
+      "effect": "When round begins, add a random playing card with a random <span class=\"hl-orange\"><b>seal</b></span> to your hand"
+    },
+    {
+      "id": "jokers_113",
+      "name": "Smeared Joker",
+      "effect": "<span style=\"color:#f11b52;\"><b>Hearts</b></span> and <span style=\"color:#f15a27;\"><b>Diamonds</b></span> count as the same suit, <span style=\"color:#292189;\"><b>Spades</b></span> and <span style=\"color:#074540;\"><b>Clubs</b></span> count as the same suit"
+    },
+    {
+      "id": "jokers_114",
+      "name": "Throwback",
+      "effect": "<b><span class=\"hl-xmult\">X0.25</span>&nbsp;Mult</b> for each <span class=\"hl-orange\"><b>Blind</b></span> skipped this run"
+    },
+    {
+      "id": "jokers_115",
+      "name": "Hanging Chad",
+      "effect": "Retrigger first played card used in scoring <span class=\"hl-orange\"><b>2</b></span> additional times"
+    },
+    {
+      "id": "jokers_116",
+      "name": "Rough Gem",
+      "effect": "Played cards with <span style=\"color:#f15a27;\"><b>Diamond</b></span> suit earn <span class=\"hl-yellow\"><b>$1</b></span> when scored"
+    },
+    {
+      "id": "jokers_117",
+      "name": "Bloodstone",
+      "effect": "<span class=\"hl-green\"><b>1 in 2</b></span> chance for played cards with <span style=\"color:#f11b52;\"><b>Heart</b></span> suit to give <b><span class=\"hl-xmult\">X1.5</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_118",
+      "name": "Arrowhead",
+      "effect": "Played cards with <span style=\"color:#292189;\"><b>Spade</b></span> suit give <span class=\"hl-chips\"><b>+50</b></span>&nbsp;<b>Chips</b> when scored"
+    },
+    {
+      "id": "jokers_119",
+      "name": "Onyx Agate",
+      "effect": "Played cards with <span style=\"color:#074540;\"><b>Club</b></span> suit give <b><span class=\"hl-mult\">+7</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_120",
+      "name": "Glass Joker",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.75</span>&nbsp;Mult</b> for every <span class=\"hl-orange\"><b>Glass Card</b></span> that is destroyed"
+    },
+    {
+      "id": "jokers_121",
+      "name": "Showman",
+      "effect": "<span class=\"hl-orange\"><b>Joker</b></span>, <span class=\"hl-sblue\"><b>Tarot</b></span>, <span class=\"hl-cyan\"><b>Planet</b></span>, and <span class=\"hl-sblue\"><b>Spectral</b></span> cards may appear multiple times"
+    },
+    {
+      "id": "jokers_122",
+      "name": "Flower Pot",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if poker hand contains a <span style=\"color:#f15a27;\"><b>Diamond</b></span> card, <span style=\"color:#074540;\"><b>Club</b></span> card, <span style=\"color:#f11b52;\"><b>Heart</b></span> card, and <span style=\"color:#292189;\"><b>Spade</b></span> card"
+    },
+    {
+      "id": "jokers_123",
+      "name": "Blueprint",
+      "effect": "Copies ability of <span class=\"hl-orange\"><b>Joker</b></span> to the right"
+    },
+    {
+      "id": "jokers_124",
+      "name": "Wee Joker",
+      "effect": "This Joker gains <span class=\"hl-chips\"><b>+8</b></span>&nbsp;<b>Chips</b> when each played <span class=\"hl-orange\"><b>2</b></span> is scored"
+    },
+    {
+      "id": "jokers_125",
+      "name": "Merry Andy",
+      "effect": "<span class=\"hl-orange\"><b>+3</b></span> discards each round, <span class=\"hl-orange\"><b>-1</b></span> hand size"
+    },
+    {
+      "id": "jokers_126",
+      "name": "Oops! All 6s",
+      "effect": "Doubles all listed probabilities"
+    },
+    {
+      "id": "jokers_127",
+      "name": "The Idol",
+      "effect": "Each played <span class=\"hl-orange\"><b>[rank]</b></span> of <span class=\"hl-orange\"><b>[suit]</b></span> gives <b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b> when scored, card changes every round"
+    },
+    {
+      "id": "jokers_128",
+      "name": "Seeing Double",
+      "effect": "<b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b> if played hand has a scoring <span style=\"color:#074540;\"><b>Club</b></span> card and a scoring card of any other suit"
+    },
+    {
+      "id": "jokers_129",
+      "name": "Matador",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$8</b></span> if played hand triggers the <span class=\"hl-orange\"><b>Boss Blind</b></span> ability"
+    },
+    {
+      "id": "jokers_130",
+      "name": "Hit the Road",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X0.5</span>&nbsp;Mult</b> for every <span class=\"hl-orange\"><b>Jack</b></span> discarded this round"
+    },
+    {
+      "id": "jokers_131",
+      "name": "The Duo",
+      "effect": "<b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Pair</b></span>"
+    },
+    {
+      "id": "jokers_132",
+      "name": "The Trio",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Three of a Kind</b></span>"
+    },
+    {
+      "id": "jokers_133",
+      "name": "The Family",
+      "effect": "<b><span class=\"hl-xmult\">X4</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Four of a Kind</b></span>"
+    },
+    {
+      "id": "jokers_134",
+      "name": "The Order",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Straight</b></span>"
+    },
+    {
+      "id": "jokers_135",
+      "name": "The Tribe",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if played hand contains a <span style=\"color:#ff8f00;\"><b>Flush</b></span>"
+    },
+    {
+      "id": "jokers_136",
+      "name": "Stuntman",
+      "effect": "<span class=\"hl-chips\"><b>+250</b></span>&nbsp;<b>Chips</b>, <span class=\"hl-orange\"><b>-2</b></span> hand size"
+    },
+    {
+      "id": "jokers_137",
+      "name": "Invisible Joker",
+      "effect": "After <span class=\"hl-orange\"><b>2</b></span> rounds, sell this card to <span class=\"hl-orange\"><b>Duplicate</b></span> a random <span class=\"hl-orange\"><b>Joker</b></span>"
+    },
+    {
+      "id": "jokers_138",
+      "name": "Brainstorm",
+      "effect": "Copies the ability of leftmost <span class=\"hl-orange\"><b>Joker</b></span>"
+    },
+    {
+      "id": "jokers_139",
+      "name": "Satellite",
+      "effect": "Earn <span class=\"hl-yellow\"><b>$1</b></span> at end of round per unique <span class=\"hl-cyan\"><b>Planet</b></span> card used this run"
+    },
+    {
+      "id": "jokers_140",
+      "name": "Shoot the Moon",
+      "effect": "Each <span class=\"hl-orange\"><b>Queen</b></span> held in hand gives <b><span class=\"hl-mult\">+13</span>&nbsp;Mult</b>"
+    },
+    {
+      "id": "jokers_141",
+      "name": "Driver's License",
+      "effect": "<b><span class=\"hl-xmult\">X3</span>&nbsp;Mult</b> if you have at least <span class=\"hl-orange\"><b>16</b></span> <span class=\"hl-orange\"><b>Enhanced</b></span> cards in your <span class=\"hl-orange\"><b>full deck</b></span>"
+    },
+    {
+      "id": "jokers_142",
+      "name": "Cartomancer",
+      "effect": "Create a <span class=\"hl-sblue\"><b>Tarot</b></span> card when <span class=\"hl-orange\"><b>Blind</b></span> is selected"
+    },
+    {
+      "id": "jokers_143",
+      "name": "Astronomer",
+      "effect": "All <span class=\"hl-cyan\"><b>Planet</b></span> cards and <span class=\"hl-cyan\"><b>Celestial</b></span> Packs in the shop are free"
+    },
+    {
+      "id": "jokers_144",
+      "name": "Burnt Joker",
+      "effect": "Upgrade the level of the first discarded poker hand each round"
+    },
+    {
+      "id": "jokers_145",
+      "name": "Bootstraps",
+      "effect": "<b><span class=\"hl-mult\">+2</span>&nbsp;Mult</b> for every <span class=\"hl-yellow\"><b>$5</b></span> you have"
+    },
+    {
+      "id": "jokers_146",
+      "name": "Canio",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X1</span>&nbsp;Mult</b> when a <span class=\"hl-orange\"><b>face</b></span> card is destroyed"
+    },
+    {
+      "id": "jokers_147",
+      "name": "Triboulet",
+      "effect": "Played <span class=\"hl-orange\"><b>Kings</b></span> and <span class=\"hl-orange\"><b>Queens</b></span> each give <b><span class=\"hl-xmult\">X2</span>&nbsp;Mult</b> when scored"
+    },
+    {
+      "id": "jokers_148",
+      "name": "Yorick",
+      "effect": "This Joker gains <b><span class=\"hl-xmult\">X1</span>&nbsp;Mult</b> every <span class=\"hl-orange\"><b>23</b></span> cards discarded"
+    },
+    {
+      "id": "jokers_149",
+      "name": "Chicot",
+      "effect": "Disables effect of every <span class=\"hl-orange\"><b>Boss Blind</b></span>"
+    },
+    {
+      "id": "jokers_150",
+      "name": "Perkeo",
+      "effect": "Creates a <span class=\"hl-sblue\"><b>Negative</b></span> copy of <span class=\"hl-orange\"><b>1</b></span> random <span class=\"hl-orange\"><b>consumable</b></span> card in your possession at the end of the <span class=\"hl-orange\"><b>shop</b></span>"
+    }
+  ]
+} 
