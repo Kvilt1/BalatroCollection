@@ -5,6 +5,8 @@ import Image from "next/image"
 import { CategoryLayout } from "@/components/category-layout"
 import data from '../../consolidated_balatro_data.json'
 import { EffectText } from "@/components/effect-text"
+import { RelatedItems } from "@/components/related-items"
+import { UnlockRequirement } from "@/components/unlock-requirement"
 
 interface ItemData {
   id: string
@@ -15,9 +17,23 @@ interface ItemData {
   onClick: () => void
 }
 
+interface VoucherPlusItem {
+  id: string
+  name: string
+  effect: string
+  appearance: string
+  category: string
+  type: string | null
+  rarity: string | null
+  cost: string | null
+  unlock_requirement: string | null
+  additional: string | null
+  related_items: (string | null)[]
+}
+
 export default function VouchersPlusPage() {
   const { image_folder, items } = data.VoucherPlus
-  const [selected, setSelected] = useState(items[0])
+  const [selected, setSelected] = useState<VoucherPlusItem>(items[0])
 
   return (
     <CategoryLayout
@@ -35,50 +51,61 @@ export default function VouchersPlusPage() {
         }
         return itemData
       })}
+      sortOptions={["id", "name"]}
+      showUnlockUI={false}
     >
-      <div className="space-y-6">
-        <h2 className="text-3xl font-bold text-white">{selected.name}</h2>
-        <div className="flex justify-center">
-          <Image
-            src={`${image_folder}${selected.appearance}`}
-            alt={selected.name}
-            width={150}
-            height={150}
-            className="rounded-lg"
-          />
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-2">Effect</h3>
-          <EffectText text={selected.effect} />
-        </div>
-        {selected.rarity && (
+      <div className="relative h-full">
+        <div className="space-y-6 pb-16">
           <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Rarity</h3>
-            <p className="text-white/90">{selected.rarity}</p>
+            <h2 className="card-title">{selected.name}</h2>
+            <div className="h-px bg-white/10 mt-4" />
           </div>
-        )}
-        {selected.cost && (
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Cost</h3>
-            <p className="text-white/90">{selected.cost}</p>
+
+          <div className="flex justify-center mb-8">
+            <Image
+              src={`${image_folder}${selected.appearance}`}
+              alt={selected.name}
+              width={150}
+              height={150}
+              className="rounded-lg shadow-lg"
+              priority={true}
+            />
           </div>
-        )}
+
+          <div className="flex flex-wrap gap-2 mb-6">
+            {selected.cost && (
+              <span className="card-tag cost">
+                💰 {selected.cost}
+              </span>
+            )}
+          </div>
+
+          <div className="card-section">
+            <h3 className="card-section-title">Effect</h3>
+            <div className="h-px bg-white/10 mb-4" />
+            <div className="flex flex-col gap-2">
+              <EffectText text={selected.effect} />
+            </div>
+          </div>
+
+          {selected.additional && (
+            <div className="card-section">
+              <h3 className="card-section-title">Additional Info</h3>
+              <div className="h-px bg-white/10 mb-4" />
+              <div className="flex flex-col gap-2">
+                <EffectText text={selected.additional} />
+              </div>
+            </div>
+          )}
+
+          {selected.related_items && selected.related_items.length > 0 && (
+            <RelatedItems items={selected.related_items.filter((item): item is string => item !== null)} category="Voucher Plus" />
+          )}
+        </div>
+
         {selected.unlock_requirement && (
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Unlock Requirement</h3>
-            <p className="text-white/90">{selected.unlock_requirement}</p>
-          </div>
-        )}
-        {selected.additional && (
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Additional Info</h3>
-            <p className="text-white/90">{selected.additional}</p>
-          </div>
-        )}
-        {selected.related_items && selected.related_items.length > 0 && (
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-2">Related Items</h3>
-            <p className="text-white/90">{selected.related_items.join(", ")}</p>
+          <div className="absolute bottom-0 left-0 right-0 bg-[#1a1a1a]/40">
+            <UnlockRequirement requirement={selected.unlock_requirement} />
           </div>
         )}
       </div>

@@ -30,7 +30,9 @@ interface CategoryLayoutProps {
   children: React.ReactNode
   showRarityFilter?: boolean
   showTypeFilter?: boolean
+  showUnlockUI?: boolean
   highlightText?: (text: string) => string
+  sortOptions?: string[]
 }
 
 const ITEMS_PER_PAGE = 20
@@ -41,7 +43,9 @@ export function CategoryLayout({
   children, 
   showRarityFilter = false,
   showTypeFilter = false,
-  highlightText
+  showUnlockUI = true,
+  highlightText,
+  sortOptions = ["id", "name", "rarity", "type"]
 }: CategoryLayoutProps) {
   const [items, setItems] = useState(initialItems)
   const [displayedItems, setDisplayedItems] = useState(initialItems.slice(0, ITEMS_PER_PAGE))
@@ -181,22 +185,26 @@ export function CategoryLayout({
             <Link href="/favorites" className="text-white/50 hover:text-white">
               <Heart className="w-5 h-5" />
             </Link>
-            <label className="flex items-center gap-2 text-sm text-white/50">
-              <input
-                type="checkbox"
-                checked={showUnlocks}
-                onChange={e => setShowUnlocks(e.target.checked)}
-                className="rounded border-white/20"
-              />
-              Show Unlocks
-            </label>
-            <SortFilterPopup 
-              onSortChange={handleSort} 
+            {showUnlockUI && (
+              <label className="flex items-center gap-2 text-sm text-white/50">
+                <input
+                  type="checkbox"
+                  checked={showUnlocks}
+                  onChange={e => setShowUnlocks(e.target.checked)}
+                  className="rounded border-white/20"
+                />
+                Show Unlocks
+              </label>
+            )}
+            <SortFilterPopup
+              onSortChange={handleSort}
               onFilterChange={handleFilter}
               onRarityFilterChange={handleRarityFilter}
               onTypeFilterChange={handleTypeFilter}
               showRarityFilter={showRarityFilter}
               showTypeFilter={showTypeFilter}
+              showUnlockUI={showUnlockUI}
+              allowedSortOptions={sortOptions}
             />
           </div>
         </div>
@@ -245,7 +253,7 @@ export function CategoryLayout({
                           </div>
                         </div>
                       )}
-                      {showUnlocks && item.unlockRequirement && (
+                      {showUnlocks && showUnlockUI && item.unlockRequirement && (
                         <div>
                           <div className="h-px bg-white/5 mb-2" />
                           <UnlockRequirement requirement={item.unlockRequirement} />

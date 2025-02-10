@@ -5,6 +5,7 @@ import Image from "next/image"
 import { CategoryLayout } from "@/components/category-layout"
 import data from '../../consolidated_balatro_data.json'
 import { EffectText } from "@/components/effect-text"
+import { RelatedItems } from "@/components/related-items"
 
 interface ItemData {
   id: string
@@ -15,9 +16,23 @@ interface ItemData {
   onClick: () => void
 }
 
+interface TagItem {
+  id: string
+  name: string
+  effect: string
+  appearance: string
+  category: string
+  type: string | null
+  rarity: string | null
+  cost: string | null
+  unlock_requirement: string | null
+  additional: string | null
+  related_items: (string | null)[]
+}
+
 export default function TagsPage() {
   const { image_folder, items } = data.Tag
-  const [selected, setSelected] = useState(items[0])
+  const [selected, setSelected] = useState<TagItem>(items[0])
 
   return (
     <CategoryLayout
@@ -74,6 +89,9 @@ export default function TagsPage() {
             <h3 className="text-xl font-semibold text-white mb-2">Additional Info</h3>
             <p className="text-white/90">{selected.additional}</p>
           </div>
+        )}
+        {selected.related_items && selected.related_items.length > 0 && (
+          <RelatedItems items={selected.related_items.filter((item): item is string => item !== null)} category="Tag" />
         )}
       </div>
     </CategoryLayout>

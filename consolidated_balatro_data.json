@@ -930,7 +930,8 @@
                 "cost": "$2",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_joker"
             },
             {
                 "id": "jokers_2",
@@ -943,7 +944,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_greedy_joker"
             },
             {
                 "id": "jokers_3",
@@ -956,7 +958,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_lusty_joker"
             },
             {
                 "id": "jokers_4",
@@ -969,7 +972,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_wrathful_joker"
             },
             {
                 "id": "jokers_5",
@@ -982,7 +986,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_gluttenous_joker"
             },
             {
                 "id": "jokers_6",
@@ -995,7 +1000,8 @@
                 "cost": "$3",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_jolly"
             },
             {
                 "id": "jokers_7",
@@ -1008,7 +1014,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_zany"
             },
             {
                 "id": "jokers_8",
@@ -1021,7 +1028,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_mad"
             },
             {
                 "id": "jokers_9",
@@ -1034,7 +1042,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_crazy"
             },
             {
                 "id": "jokers_10",
@@ -1047,7 +1056,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_droll"
             },
             {
                 "id": "jokers_11",
@@ -1060,7 +1070,8 @@
                 "cost": "$3",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_sly"
             },
             {
                 "id": "jokers_12",
@@ -1073,7 +1084,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_wily"
             },
             {
                 "id": "jokers_13",
@@ -1086,7 +1098,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_clever"
             },
             {
                 "id": "jokers_14",
@@ -1099,7 +1112,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_devious"
             },
             {
                 "id": "jokers_15",
@@ -1112,7 +1126,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_crafty"
             },
             {
                 "id": "jokers_16",
@@ -1125,7 +1140,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_half"
             },
             {
                 "id": "jokers_17",
@@ -1138,7 +1154,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_stencil"
             },
             {
                 "id": "jokers_18",
@@ -1151,7 +1168,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_four_fingers"
             },
             {
                 "id": "jokers_19",
@@ -1164,7 +1182,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_mime"
             },
             {
                 "id": "jokers_20",
@@ -1177,7 +1196,8 @@
                 "cost": "$1",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_credit_card"
             },
             {
                 "id": "jokers_21",
@@ -1190,7 +1210,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ceremonial"
             },
             {
                 "id": "jokers_22",
@@ -1203,7 +1224,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_banner"
             },
             {
                 "id": "jokers_23",
@@ -1216,7 +1238,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_mystic_summit"
             },
             {
                 "id": "jokers_24",
@@ -1229,7 +1252,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_marble"
             },
             {
                 "id": "jokers_25",
@@ -1242,7 +1266,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_loyalty_card"
             },
             {
                 "id": "jokers_26",
@@ -1268,7 +1293,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_misprint"
             },
             {
                 "id": "jokers_28",
@@ -1281,7 +1307,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_dusk"
             },
             {
                 "id": "jokers_29",
@@ -1294,7 +1321,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_raised_fist"
             },
             {
                 "id": "jokers_30",
@@ -1307,7 +1335,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_chaos"
             },
             {
                 "id": "jokers_31",
@@ -1320,7 +1349,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_fibonacci"
             },
             {
                 "id": "jokers_32",
@@ -1333,7 +1363,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Steel Card in the deck.)",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_steel_joker"
             },
             {
                 "id": "jokers_33",
@@ -1346,7 +1377,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_scary_face"
             },
             {
                 "id": "jokers_34",
@@ -1359,7 +1391,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_abstract"
             },
             {
                 "id": "jokers_35",
@@ -1372,7 +1405,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_delayed_grat"
             },
             {
                 "id": "jokers_36",
@@ -1385,7 +1419,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hack"
             },
             {
                 "id": "jokers_37",
@@ -1398,7 +1433,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_pareidolia"
             },
             {
                 "id": "jokers_38",
@@ -1411,7 +1447,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_gros_michel"
             },
             {
                 "id": "jokers_39",
@@ -1424,7 +1461,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_even_steven"
             },
             {
                 "id": "jokers_40",
@@ -1437,7 +1475,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_odd_todd"
             },
             {
                 "id": "jokers_41",
@@ -1450,7 +1489,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_scholar"
             },
             {
                 "id": "jokers_42",
@@ -1463,7 +1503,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_business"
             },
             {
                 "id": "jokers_43",
@@ -1476,7 +1517,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_supernova"
             },
             {
                 "id": "jokers_44",
@@ -1489,7 +1531,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ride_the_bus"
             },
             {
                 "id": "jokers_45",
@@ -1502,7 +1545,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_space"
             },
             {
                 "id": "jokers_46",
@@ -1515,7 +1559,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_egg"
             },
             {
                 "id": "jokers_47",
@@ -1528,7 +1573,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_burglar"
             },
             {
                 "id": "jokers_48",
@@ -1541,7 +1587,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_blackboard"
             },
             {
                 "id": "jokers_49",
@@ -1554,7 +1601,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_runner"
             },
             {
                 "id": "jokers_50",
@@ -1567,7 +1615,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ice_cream"
             },
             {
                 "id": "jokers_51",
@@ -1580,7 +1629,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_dna"
             },
             {
                 "id": "jokers_52",
@@ -1593,7 +1643,8 @@
                 "cost": "$3",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_splash"
             },
             {
                 "id": "jokers_53",
@@ -1606,7 +1657,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_blue_joker"
             },
             {
                 "id": "jokers_54",
@@ -1619,7 +1671,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_sixth_sense"
             },
             {
                 "id": "jokers_55",
@@ -1632,7 +1685,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_constellation"
             },
             {
                 "id": "jokers_56",
@@ -1645,7 +1699,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hiker"
             },
             {
                 "id": "jokers_57",
@@ -1658,7 +1713,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_faceless"
             },
             {
                 "id": "jokers_58",
@@ -1671,7 +1727,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_green_joker"
             },
             {
                 "id": "jokers_59",
@@ -1684,7 +1741,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_superposition"
             },
             {
                 "id": "jokers_60",
@@ -1697,7 +1755,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_todo_list"
             },
             {
                 "id": "jokers_61",
@@ -1710,7 +1769,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start. (Can only appear in the shop when Gros Michel has destroyed itself in the current run.)",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_cavendish"
             },
             {
                 "id": "jokers_62",
@@ -1723,7 +1783,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_card_sharp"
             },
             {
                 "id": "jokers_63",
@@ -1736,7 +1797,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_red_card"
             },
             {
                 "id": "jokers_64",
@@ -1749,7 +1811,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_madness"
             },
             {
                 "id": "jokers_65",
@@ -1762,7 +1825,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_square"
             },
             {
                 "id": "jokers_66",
@@ -1775,7 +1839,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_seance"
             },
             {
                 "id": "jokers_67",
@@ -1788,7 +1853,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_riff_raff"
             },
             {
                 "id": "jokers_68",
@@ -1801,7 +1867,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_vampire"
             },
             {
                 "id": "jokers_69",
@@ -1814,7 +1881,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_shortcut"
             },
             {
                 "id": "jokers_70",
@@ -1827,7 +1895,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hologram"
             },
             {
                 "id": "jokers_71",
@@ -1840,7 +1909,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_vagabond"
             },
             {
                 "id": "jokers_72",
@@ -1853,7 +1923,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_baron"
             },
             {
                 "id": "jokers_73",
@@ -1866,7 +1937,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_cloud_9"
             },
             {
                 "id": "jokers_74",
@@ -1879,7 +1951,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_rocket"
             },
             {
                 "id": "jokers_75",
@@ -1892,7 +1965,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_obelisk"
             },
             {
                 "id": "jokers_76",
@@ -1905,7 +1979,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_midas_mask"
             },
             {
                 "id": "jokers_77",
@@ -1918,7 +1993,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_luchador"
             },
             {
                 "id": "jokers_78",
@@ -1931,7 +2007,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_photograph"
             },
             {
                 "id": "jokers_79",
@@ -1944,7 +2021,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_gift_card"
             },
             {
                 "id": "jokers_80",
@@ -1957,7 +2035,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_turtle_bean"
             },
             {
                 "id": "jokers_81",
@@ -1970,7 +2049,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_erosion"
             },
             {
                 "id": "jokers_82",
@@ -1983,7 +2063,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_reserved_parking"
             },
             {
                 "id": "jokers_83",
@@ -1996,7 +2077,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_mail"
             },
             {
                 "id": "jokers_84",
@@ -2009,7 +2091,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_to_the_moon"
             },
             {
                 "id": "jokers_85",
@@ -2022,7 +2105,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hallucination"
             },
             {
                 "id": "jokers_86",
@@ -2035,7 +2119,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_fortune_teller"
             },
             {
                 "id": "jokers_87",
@@ -2048,7 +2133,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_juggler"
             },
             {
                 "id": "jokers_88",
@@ -2061,7 +2147,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_drunkard"
             },
             {
                 "id": "jokers_89",
@@ -2074,7 +2161,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Stone Card in the deck.)",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_stone"
             },
             {
                 "id": "jokers_90",
@@ -2087,7 +2175,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_golden"
             },
             {
                 "id": "jokers_91",
@@ -2100,7 +2189,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start. (Can only appear in the shop when there is a Lucky Card in the deck.)",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_lucky_cat"
             },
             {
                 "id": "jokers_92",
@@ -2113,7 +2203,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_baseball"
             },
             {
                 "id": "jokers_93",
@@ -2126,7 +2217,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_bull"
             },
             {
                 "id": "jokers_94",
@@ -2139,7 +2231,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_diet_cola"
             },
             {
                 "id": "jokers_95",
@@ -2152,7 +2245,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_trading"
             },
             {
                 "id": "jokers_96",
@@ -2165,7 +2259,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_flash"
             },
             {
                 "id": "jokers_97",
@@ -2178,7 +2273,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_popcorn"
             },
             {
                 "id": "jokers_98",
@@ -2191,7 +2287,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_trousers"
             },
             {
                 "id": "jokers_99",
@@ -2204,7 +2301,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ancient"
             },
             {
                 "id": "jokers_100",
@@ -2217,7 +2315,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ramen"
             },
             {
                 "id": "jokers_101",
@@ -2230,7 +2329,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_walkie_talkie"
             },
             {
                 "id": "jokers_102",
@@ -2243,7 +2343,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_selzer"
             },
             {
                 "id": "jokers_103",
@@ -2256,7 +2357,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_castle"
             },
             {
                 "id": "jokers_104",
@@ -2269,7 +2371,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_smiley"
             },
             {
                 "id": "jokers_105",
@@ -2282,7 +2385,8 @@
                 "cost": "$9",
                 "unlock_requirement": "Available from start.\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_campfire"
             },
             {
                 "id": "jokers_106",
@@ -2295,7 +2399,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Play a 5 card hand that contains only Gold cards. (Can only appear in the shop when there is a Gold Card in the deck.)\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_golden_ticket"
             },
             {
                 "id": "jokers_107",
@@ -2308,7 +2413,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Lose 5 runs.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_mr_bones"
             },
             {
                 "id": "jokers_108",
@@ -2321,7 +2427,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Play 200 hands.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_acrobat"
             },
             {
                 "id": "jokers_109",
@@ -2334,7 +2441,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Play a total of 300 face cards.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_sock_and_buskin"
             },
             {
                 "id": "jokers_110",
@@ -2347,7 +2455,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Sell a total of 20 Joker cards.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_swashbuckler"
             },
             {
                 "id": "jokers_111",
@@ -2360,7 +2469,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Win 5 consecutive rounds by playing only 1 hand.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_troubadour"
             },
             {
                 "id": "jokers_112",
@@ -2373,7 +2483,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Have a Gold playing card with a Gold Seal.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_certificate"
             },
             {
                 "id": "jokers_113",
@@ -2386,7 +2497,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 3 Wild Cards in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_smeared"
             },
             {
                 "id": "jokers_114",
@@ -2399,7 +2511,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Continue a saved run from the main menu.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_throwback"
             },
             {
                 "id": "jokers_115",
@@ -2412,7 +2525,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Beat a Boss Blind with a High Card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hanging_chad"
             },
             {
                 "id": "jokers_116",
@@ -2425,7 +2539,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 30 ♦️ in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_rough_gem"
             },
             {
                 "id": "jokers_117",
@@ -2438,7 +2553,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 30 ♥️ in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_bloodstone"
             },
             {
                 "id": "jokers_118",
@@ -2451,7 +2567,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 30 ♠️ in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_arrowhead"
             },
             {
                 "id": "jokers_119",
@@ -2464,7 +2581,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 30 ♣️ in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_onyx_agate"
             },
             {
                 "id": "jokers_120",
@@ -2477,7 +2595,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Have 5 or more Glass cards in your deck. (Can only appear in the shop when there is a Glass Card in the deck.)\t",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_glass"
             },
             {
                 "id": "jokers_121",
@@ -2490,7 +2609,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Reach Ante level 4.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_ring_master"
             },
             {
                 "id": "jokers_122",
@@ -2503,7 +2623,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Reach Ante 8.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_flower_pot"
             },
             {
                 "id": "jokers_123",
@@ -2516,7 +2637,8 @@
                 "cost": "$10",
                 "unlock_requirement": "Win 1 run.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_blueprint"
             },
             {
                 "id": "jokers_124",
@@ -2529,7 +2651,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run in 18 or fewer rounds.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_wee"
             },
             {
                 "id": "jokers_125",
@@ -2542,7 +2665,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Win a run in 12 or fewer rounds.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_merry_andy"
             },
             {
                 "id": "jokers_126",
@@ -2555,7 +2679,8 @@
                 "cost": "$4",
                 "unlock_requirement": "Earn at least 10,000 Chips in a single hand.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_oops"
             },
             {
                 "id": "jokers_127",
@@ -2568,7 +2693,8 @@
                 "cost": "$6",
                 "unlock_requirement": "In one hand, earn at least 1,000,000 Chips.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_idol"
             },
             {
                 "id": "jokers_128",
@@ -2581,7 +2707,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Play a hand that contains four 7 of ♣️.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_seeing_double"
             },
             {
                 "id": "jokers_129",
@@ -2594,7 +2721,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Defeat a Boss Blind in one hand, without using discards.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_matador"
             },
             {
                 "id": "jokers_130",
@@ -2607,7 +2735,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Discard 5 Jacks at the same time.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_hit_the_road"
             },
             {
                 "id": "jokers_131",
@@ -2620,7 +2749,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run without playing a Pair.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_duo"
             },
             {
                 "id": "jokers_132",
@@ -2633,7 +2763,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run without playing a Three of a Kind.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_trio"
             },
             {
                 "id": "jokers_133",
@@ -2646,7 +2777,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run without playing a Four of a Kind.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_family"
             },
             {
                 "id": "jokers_134",
@@ -2659,7 +2791,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run without playing a Straight.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_order"
             },
             {
                 "id": "jokers_135",
@@ -2672,7 +2805,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a run without playing a Flush.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_tribe"
             },
             {
                 "id": "jokers_136",
@@ -2685,7 +2819,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Earn at least 100 million (100,000,000) Chips in a single hand.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_stuntman"
             },
             {
                 "id": "jokers_137",
@@ -2698,7 +2833,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Win a game while never having more than 4 jokers.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_invisible"
             },
             {
                 "id": "jokers_138",
@@ -2711,7 +2847,8 @@
                 "cost": "$10",
                 "unlock_requirement": "Discard a Royal Flush.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_brainstorm"
             },
             {
                 "id": "jokers_139",
@@ -2724,7 +2861,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Have at least $400.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_satellite"
             },
             {
                 "id": "jokers_140",
@@ -2737,7 +2875,8 @@
                 "cost": "$5",
                 "unlock_requirement": "Play every ♥️ card in your deck in one round.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_shoot_the_moon"
             },
             {
                 "id": "jokers_141",
@@ -2750,7 +2889,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Enhance 16 cards in your deck.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_drivers_license"
             },
             {
                 "id": "jokers_142",
@@ -2763,7 +2903,8 @@
                 "cost": "$6",
                 "unlock_requirement": "Discover every Tarot card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_cartomancer"
             },
             {
                 "id": "jokers_143",
@@ -2776,7 +2917,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Discover all Planet cards.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_astronomer"
             },
             {
                 "id": "jokers_144",
@@ -2789,7 +2931,8 @@
                 "cost": "$8",
                 "unlock_requirement": "Sell a total of 50 cards.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_burnt"
             },
             {
                 "id": "jokers_145",
@@ -2802,7 +2945,8 @@
                 "cost": "$7",
                 "unlock_requirement": "Have at least 2 Polychrome Jokers at the same time.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_bootstraps"
             },
             {
                 "id": "jokers_146",
@@ -2815,7 +2959,8 @@
                 "cost": "N/A",
                 "unlock_requirement": "Find this Joker from the Soul card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_caino"
             },
             {
                 "id": "jokers_147",
@@ -2828,7 +2973,8 @@
                 "cost": "N/A",
                 "unlock_requirement": "Find this Joker from the Soul card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_triboulet"
             },
             {
                 "id": "jokers_148",
@@ -2841,7 +2987,8 @@
                 "cost": "N/A",
                 "unlock_requirement": "Find this Joker from the Soul card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_yorick"
             },
             {
                 "id": "jokers_149",
@@ -2854,7 +3001,8 @@
                 "cost": "N/A",
                 "unlock_requirement": "Find this Joker from the Soul card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_chicot"
             },
             {
                 "id": "jokers_150",
@@ -2867,7 +3015,8 @@
                 "cost": "N/A",
                 "unlock_requirement": "Find this Joker from the Soul card.",
                 "additional": null,
-                "related_items": []
+                "related_items": [],
+                "gameid": "j_perkeo"
             }
         ]
     },

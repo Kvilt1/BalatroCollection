@@ -8,6 +8,8 @@ interface SortFilterPopupProps {
   onTypeFilterChange?: (types: string[]) => void
   showRarityFilter?: boolean
   showTypeFilter?: boolean
+  showUnlockUI?: boolean
+  allowedSortOptions?: string[]
 }
 
 export function SortFilterPopup({ 
@@ -16,7 +18,9 @@ export function SortFilterPopup({
   onRarityFilterChange,
   onTypeFilterChange,
   showRarityFilter = false,
-  showTypeFilter = false
+  showTypeFilter = false,
+  showUnlockUI = true,
+  allowedSortOptions = ["id", "name", "rarity", "type"]
 }: SortFilterPopupProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [showUnlockable, setShowUnlockable] = useState(false)
@@ -29,6 +33,13 @@ export function SortFilterPopup({
     rarity: 'asc',
     type: 'asc'
   })
+
+  const sortOptions = [
+    { key: 'id', label: 'ID' },
+    { key: 'name', label: 'Name' },
+    { key: 'rarity', label: 'Rarity' },
+    { key: 'type', label: 'Type' }
+  ].filter(option => allowedSortOptions.includes(option.key))
 
   const jokerTypes = [
     { key: '+c', label: 'Chips' },
@@ -87,12 +98,7 @@ export function SortFilterPopup({
           <div className="space-y-2">
             <h3 className="text-sm font-semibold text-white">Sort by</h3>
             <div className="space-y-1">
-              {[
-                { key: 'id', label: 'ID' },
-                { key: 'name', label: 'Name' },
-                { key: 'rarity', label: 'Rarity' },
-                { key: 'type', label: 'Type' }
-              ].map(({ key, label }) => (
+              {sortOptions.map(({ key, label }) => (
                 <div key={key} className="flex items-center justify-between">
                   <button
                     onClick={() => handleSortChange(key)}
@@ -121,18 +127,20 @@ export function SortFilterPopup({
 
           <div className="space-y-2">
             <h3 className="text-sm font-semibold text-white">Filter</h3>
-            <label className="flex items-center gap-2 px-2 py-1 text-sm text-white/80 hover:text-white">
-              <input
-                type="checkbox"
-                checked={showUnlockable}
-                onChange={(e) => {
-                  setShowUnlockable(e.target.checked)
-                  onFilterChange(e.target.checked)
-                }}
-                className="rounded border-white/20"
-              />
-              Unlockable Only
-            </label>
+            {showUnlockUI && (
+              <label className="flex items-center gap-2 px-2 py-1 text-sm text-white/80 hover:text-white">
+                <input
+                  type="checkbox"
+                  checked={showUnlockable}
+                  onChange={(e) => {
+                    setShowUnlockable(e.target.checked)
+                    onFilterChange(e.target.checked)
+                  }}
+                  className="rounded border-white/20"
+                />
+                Unlockable Only
+              </label>
+            )}
           </div>
 
           {showRarityFilter && (

@@ -6,9 +6,45 @@ import Link from "next/link"
 import Image from "next/image"
 import { EffectText } from "@/components/effect-text"
 import { Heart } from "lucide-react"
+import React from "react"
+
+type CategoryType = 'Voucher' | 'VoucherPlus' | 'Spectral' | 'Seal' | 'Joker' | 'Booster' | 'Planet' | 'Tarot' | 'Enhancement' | 'Tag' | 'Blind' | 'Deck'
+
+const categoryToRoute: Record<CategoryType, string> = {
+  Voucher: "vouchers",
+  VoucherPlus: "vouchers-plus",
+  Spectral: "spectral",
+  Seal: "seals",
+  Joker: "jokers",
+  Booster: "boosters",
+  Planet: "planets",
+  Tarot: "tarot",
+  Enhancement: "enhancements",
+  Tag: "tags",
+  Blind: "blind",
+  Deck: "decks"
+}
 
 export default function FavoritesPage() {
   const { favorites, toggleFavorite } = useFavorites()
+  const [isLoading, setIsLoading] = React.useState(true)
+
+  React.useEffect(() => {
+    setIsLoading(false)
+  }, [])
+
+  // Show loading state during client-side initialization
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-rose-950 to-slate-950 p-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-2 mb-8">
+            <div className="text-white/50">Loading...</div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   const favoriteCards = Object.entries(data).flatMap(([category, categoryData]) => 
     categoryData.items
@@ -76,13 +112,14 @@ export default function FavoritesPage() {
               </div>
               <button
                 onClick={() => toggleFavorite(card.id)}
-                className="absolute top-2 right-2 p-1 text-white/40 hover:text-red-500 transition-colors"
+                className="absolute top-2 right-2 p-1 text-red-500 hover:text-white/40 transition-colors group-hover:opacity-100 z-10"
+                title="Remove from favorites"
               >
                 <Heart className="w-5 h-5 fill-current" />
               </button>
               <Link
-                href={`/${card.category.toLowerCase()}?card=${card.id}`}
-                className="absolute inset-0"
+                href={`/${categoryToRoute[card.category as CategoryType]}?card=${card.id}`}
+                className="absolute inset-0 z-0"
               >
                 <span className="sr-only">View {card.name}</span>
               </Link>

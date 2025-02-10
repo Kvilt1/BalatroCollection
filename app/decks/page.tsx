@@ -6,6 +6,7 @@ import { CategoryLayout } from "@/components/category-layout"
 import data from '../../consolidated_balatro_data.json'
 import { EffectText } from "@/components/effect-text"
 import { UnlockRequirement } from "@/components/unlock-requirement"
+import { RelatedItems } from "@/components/related-items"
 
 interface ItemData {
   id: string
@@ -16,9 +17,23 @@ interface ItemData {
   onClick: () => void
 }
 
+interface DeckItem {
+  id: string
+  name: string
+  effect: string
+  appearance: string
+  category: string
+  type: string | null
+  rarity: string | null
+  cost: string | null
+  unlock_requirement: string | null
+  additional: string | null
+  related_items: (string | null)[]
+}
+
 export default function DecksPage() {
   const { image_folder, items } = data.Deck
-  const [selected, setSelected] = useState(items[0])
+  const [selected, setSelected] = useState<DeckItem>(items[0])
 
   return (
     <CategoryLayout
@@ -53,6 +68,15 @@ export default function DecksPage() {
             <h3 className="text-xl font-semibold text-white mb-2">Effect</h3>
             <EffectText text={selected.effect} />
           </div>
+          {selected.additional && (
+            <div>
+              <h3 className="text-xl font-semibold text-white mb-2">Additional Info</h3>
+              <p className="text-white/90">{selected.additional}</p>
+            </div>
+          )}
+          {selected.related_items && selected.related_items.length > 0 && (
+            <RelatedItems items={selected.related_items.filter((item): item is string => item !== null)} category="Deck" />
+          )}
         </div>
 
         {selected.unlock_requirement && (
