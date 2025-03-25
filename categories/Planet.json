@@ -1,0 +1,163 @@
+{
+  "Planet": {
+    "image_folder": "/assets/planets/",
+    "items": [
+      {
+        "id": "planets_1",
+        "name": "Mercury",
+        "appearance": "planet_mercury.png",
+        "effect": "+1 Mult and +15 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_2",
+        "name": "Venus",
+        "appearance": "planet_venus.png",
+        "effect": "+2 Mult +20 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_3",
+        "name": "Earth",
+        "appearance": "planet_earth.png",
+        "effect": "+2 Mult and 25 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_4",
+        "name": "Mars",
+        "appearance": "planet_mars.png",
+        "effect": "+3 Mult and +30 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_5",
+        "name": "Jupiter",
+        "appearance": "planet_jupiter.png",
+        "effect": "+2 Mult and +15 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_6",
+        "name": "Saturn",
+        "appearance": "planet_saturn.png",
+        "effect": "+2 Mult and +30 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_7",
+        "name": "Uranus",
+        "appearance": "planet_uranus.png",
+        "effect": "+1 Mult and +20 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_8",
+        "name": "Neptune",
+        "appearance": "planet_neptune.png",
+        "effect": "+3 Mult and +40 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "No requirement needed.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_9",
+        "name": "Pluto",
+        "appearance": "planet_pluto.png",
+        "effect": "+1 Mult and +10 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_10",
+        "name": "Planet X",
+        "appearance": "planet_x.png",
+        "effect": "+3 Mult and +35 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "This Planet card will not show up in Celestial Packs or the shop until its related secret hand has been played at least once during the run",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_11",
+        "name": "Ceres",
+        "appearance": "planet_ceres.png",
+        "effect": "+3 Mult and +40 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "This Planet card will not show up in Celestial Packs or the shop until its related secret hand has been played at least once during the run",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "planets_12",
+        "name": "Eris",
+        "appearance": "planet_eris.png",
+        "effect": "+3 Mult and +35 Chips",
+        "category": "Planet",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "This Planet card will not show up in Celestial Packs or the shop until its related secret hand has been played at least once during the run",
+        "additional": null,
+        "related_items": []
+      }
+    ]
+  }
+}

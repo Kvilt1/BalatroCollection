@@ -5,43 +5,9 @@ import Image from "next/image"
 import { useState } from "react"
 import { ChevronRight, Search, Heart, FileJson } from "lucide-react"
 import { Input } from "@/components/ui/input"
-import data from '../consolidated_balatro_data.json'
+import { categoryData, BalatraData } from '@/lib/categories'
 
-interface CardItem {
-  id: string
-  name: string
-  effect: string
-  appearance: string
-  category: string
-  type: string | null
-  rarity: string | null
-  cost: string | null
-  unlock_requirement: string | null
-  additional: string | null
-  related_items: string[]
-}
-
-interface CardCategory {
-  image_folder: string
-  items: CardItem[]
-}
-
-interface BalatraData {
-  Blind: CardCategory
-  Booster: CardCategory
-  Deck: CardCategory
-  Enhancement: CardCategory
-  Joker: CardCategory
-  Planet: CardCategory
-  Seal: CardCategory
-  Spectral: CardCategory
-  Tag: CardCategory
-  Tarot: CardCategory
-  Voucher: CardCategory
-  VoucherPlus: CardCategory
-}
-
-const typedData = data as BalatraData
+const typedData = categoryData as BalatraData
 
 const categories = [
   {

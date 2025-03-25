@@ -1,0 +1,59 @@
+{
+  "Seal": {
+    "image_folder": "/assets/seals/",
+    "items": [
+      {
+        "id": "seals_1",
+        "name": "Gold Seal",
+        "appearance": "enhancer_sealgold.png",
+        "effect": "Earn $3 when this card is played and scores",
+        "category": "Seal",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "seals_2",
+        "name": "Red Seal",
+        "appearance": "enhancer_sealred.png",
+        "effect": "Retrigger this card 1 time",
+        "category": "Seal",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "seals_3",
+        "name": "Blue Seal",
+        "appearance": "enhancer_sealblue.png",
+        "effect": "Creates a Planet card if this card is held in hand at end of round",
+        "category": "Seal",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "seals_4",
+        "name": "Purple Seal",
+        "appearance": "enhancer_sealpurple.png",
+        "effect": "Creates a Tarot card when discarded. Must have room",
+        "category": "Seal",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "tag_boss": {
+    "name": "Boss Tag",
+    "text": [
+      "Rerolls the",
+      "{C:attention}Boss Blind"
+    ]
+  },
+  "tag_buffoon": {
+    "name": "Buffoon Tag",
+    "text": [
+      "Gives a free",
+      "{C:attention}Mega Buffoon Pack"
+    ]
+  },
+  "tag_charm": {
+    "name": "Charm Tag",
+    "text": [
+      "Gives a free",
+      "{C:tarot}Mega Arcana Pack"
+    ]
+  },
+  "tag_coupon": {
+    "name": "Coupon Tag",
+    "text": [
+      "Initial cards and",
+      "booster packs in next",
+      "shop are free"
+    ]
+  },
+  "tag_d_six": {
+    "name": "D6 Tag",
+    "text": [
+      "Rerolls in next shop",
+      "start at {C:money}$0"
+    ]
+  },
+  "tag_double": {
+    "name": "Double Tag",
+    "text": [
+      "Gives a copy of the",
+      "next selected {C:attention}Tag{}",
+      "{s:0.8,C:attention}Double Tag{s:0.8} excluded"
+    ]
+  },
+  "tag_economy": {
+    "name": "Economy Tag",
+    "text": [
+      "Doubles your money",
+      "{C:inactive}(Max of {C:money}$#1#{C:inactive})"
+    ]
+  },
+  "tag_ethereal": {
+    "name": "Ethereal Tag",
+    "text": [
+      "Gives a free",
+      "{C:spectral}Spectral Pack"
+    ]
+  },
+  "tag_foil": {
+    "name": "Foil Tag",
+    "text": [
+      "Next base edition shop",
+      "Joker is free and",
+      "becomes {C:dark_edition}Foil"
+    ]
+  },
+  "tag_garbage": {
+    "name": "Garbage Tag",
+    "text": [
+      "Gives {C:money}$#1#{} per unused",
+      "{C:red}discard{} this run",
+      "{C:inactive}(Will give {C:money}$#2#{C:inactive})"
+    ]
+  },
+  "tag_handy": {
+    "name": "Handy Tag",
+    "text": [
+      "Gives {C:money}$#1#{} per played",
+      "{C:blue}hand{} this run",
+      "{C:inactive}(Will give {C:money}$#2#{C:inactive})"
+    ]
+  },
+  "tag_holo": {
+    "name": "Holographic Tag",
+    "text": [
+      "Next base edition shop",
+      "Joker is free and",
+      "becomes {C:dark_edition}Holographic"
+    ]
+  },
+  "tag_investment": {
+    "name": "Investment Tag",
+    "text": [
+      "After defeating",
+      "the Boss Blind,",
+      "gain {C:money}$#1#"
+    ]
+  },
+  "tag_juggle": {
+    "name": "Juggle Tag",
+    "text": [
+      "{C:attention}+#1#{} hand size",
+      "next round"
+    ]
+  },
+  "tag_meteor": {
+    "name": "Meteor Tag",
+    "text": [
+      "Gives a free",
+      "{C:planet}Mega Celestial Pack"
+    ]
+  },
+  "tag_negative": {
+    "name": "Negative Tag",
+    "text": [
+      "Next base edition shop",
+      "Joker is free and",
+      "becomes {C:dark_edition}Negative"
+    ]
+  },
+  "tag_orbital": {
+    "name": "Orbital Tag",
+    "text": [
+      "Upgrade {C:attention}#1#",
+      "by {C:attention}#2# levels"
+    ]
+  },
+  "tag_polychrome": {
+    "name": "Polychrome Tag",
+    "text": [
+      "Next base edition shop",
+      "Joker is free and",
+      "becomes {C:dark_edition}Polychrome"
+    ]
+  },
+  "tag_rare": {
+    "name": "Rare Tag",
+    "text": [
+      "Shop has a free",
+      "{C:red}Rare Joker"
+    ]
+  },
+  "tag_skip": {
+    "name": "Speed Tag",
+    "text": [
+      "Gives {C:money}$#1#{} per skipped",
+      "Blind this run",
+      "{C:inactive}(Will give {C:money}$#2#{C:inactive})"
+    ]
+  },
+  "tag_standard": {
+    "name": "Standard Tag",
+    "text": [
+      "Gives a free",
+      "{C:attention}Mega Standard Pack"
+    ]
+  },
+  "tag_top_up": {
+    "name": "Top-up Tag",
+    "text": [
+      "Create up to {C:attention}#1#",
+      "{C:blue}Common{} Jokers",
+      "{C:inactive}(Must have room)"
+    ]
+  },
+  "tag_uncommon": {
+    "name": "Uncommon Tag",
+    "text": [
+      "Shop has a free",
+      "{C:green}Uncommon Joker"
+    ]
+  },
+  "tag_voucher": {
+    "name": "Voucher Tag",
+    "text": [
+      "Adds one {C:voucher}Voucher",
+      "to the next shop"
+    ]
+  }
+}

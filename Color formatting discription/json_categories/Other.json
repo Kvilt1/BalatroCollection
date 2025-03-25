@@ -1,0 +1,417 @@
+{
+  "black_sticker": {
+    "name": "Black Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Black",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "blue_seal": {
+    "name": "Blue Seal",
+    "text": [
+      "Creates the {C:planet}Planet{} card",
+      "for final played {C:attention}poker hand{}",
+      "of round if {C:attention}held{} in hand",
+      "{C:inactive}(Must have room)"
+    ]
+  },
+  "blue_sticker": {
+    "name": "Blue Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Blue",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "card_chips": {
+    "text": [
+      "{C:chips}+#1#{} chips"
+    ]
+  },
+  "card_extra_chips": {
+    "text": [
+      "{C:chips}+#1#{} extra chips"
+    ]
+  },
+  "challenge_locked": {
+    "name": "Locked",
+    "text": [
+      "Win a run with at least",
+      "#1# different decks to unlock",
+      "Challenge mode",
+      "{C:attention,s:2}#2#/#1#"
+    ]
+  },
+  "debuffed_default": {
+    "name": "Debuffed",
+    "text": [
+      "All abilities",
+      "are disabled"
+    ]
+  },
+  "debuffed_playing_card": {
+    "name": "Debuffed",
+    "text": [
+      "Scores no chips",
+      "and all abilities",
+      "are disabled"
+    ]
+  },
+  "deck_locked_discover": {
+    "name": "Locked",
+    "text": [
+      "Discover at least",
+      "{C:attention}#1#{} items from",
+      "your collection"
+    ]
+  },
+  "deck_locked_stake": {
+    "name": "Locked",
+    "text": [
+      "Win a run with any",
+      "deck on at least",
+      "{V:1}#1#{} difficulty"
+    ]
+  },
+  "deck_locked_win": {
+    "name": "Locked",
+    "text": [
+      "Win a run with",
+      "{C:attention}#1#{}",
+      "on any difficulty"
+    ]
+  },
+  "demo_locked": {
+    "name": "Locked",
+    "text": [
+      "Not available",
+      "in this demo"
+    ]
+  },
+  "demo_shop_locked": {
+    "name": "Locked",
+    "text": [
+      "Card from {C:attention}Jimbo's",
+      "personal collection,",
+      "available in the full",
+      "version of {E:1,C:red}Balatro"
+    ]
+  },
+  "eternal": {
+    "name": "Eternal",
+    "text": [
+      "Can't be sold",
+      "or destroyed"
+    ]
+  },
+  "gold_seal": {
+    "name": "Gold Seal",
+    "text": [
+      "Earn {C:money}$3{} when this",
+      "card is played",
+      "and scores"
+    ]
+  },
+  "gold_sticker": {
+    "name": "Gold Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Gold",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "green_sticker": {
+    "name": "Green Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Green",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "joker_locked_legendary": {
+    "name": "Locked",
+    "text": [
+      "Find this Joker",
+      "from the {C:spectral}Soul{} card"
+    ]
+  },
+  "locked": {
+    "name": "Locked",
+    "text": []
+  },
+  "orange_sticker": {
+    "name": "Orange Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Orange",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "p_arcana_jumbo": {
+    "name": "Jumbo Arcana Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:tarot} Tarot{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_arcana_mega": {
+    "name": "Mega Arcana Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:tarot} Tarot{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_arcana_normal": {
+    "name": "Arcana Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:tarot} Tarot{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_buffoon_jumbo": {
+    "name": "Jumbo Buffoon Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:joker} Joker{} cards"
+    ]
+  },
+  "p_buffoon_mega": {
+    "name": "Mega Buffoon Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:joker} Joker{} cards"
+    ]
+  },
+  "p_buffoon_normal": {
+    "name": "Buffoon Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:joker} Joker{} cards"
+    ]
+  },
+  "p_celestial_jumbo": {
+    "name": "Jumbo Celestial Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:planet} Planet{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_celestial_mega": {
+    "name": "Mega Celestial Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:planet} Planet{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_celestial_normal": {
+    "name": "Celestial Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:planet} Planet{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_spectral_jumbo": {
+    "name": "Jumbo Spectral Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:spectral} Spectral{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_spectral_mega": {
+    "name": "Mega Spectral Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:spectral} Spectral{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_spectral_normal": {
+    "name": "Spectral Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:spectral} Spectral{} cards to",
+      "be used immediately"
+    ]
+  },
+  "p_standard_jumbo": {
+    "name": "Jumbo Standard Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:attention} Playing{} cards to",
+      "add to your deck"
+    ]
+  },
+  "p_standard_mega": {
+    "name": "Mega Standard Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:attention} Playing{} cards to",
+      "add to your deck"
+    ]
+  },
+  "p_standard_normal": {
+    "name": "Standard Pack",
+    "text": [
+      "Choose {C:attention}#1#{} of up to",
+      "{C:attention}#2#{C:attention} Playing{} cards to",
+      "add to your deck"
+    ]
+  },
+  "perishable": {
+    "name": "Perishable",
+    "text": [
+      "Debuffed after",
+      "{C:attention}#1#{} rounds",
+      "{C:inactive}({C:attention}#2#{C:inactive} remaining)"
+    ]
+  },
+  "pinned_left": {
+    "name": "Pinned",
+    "text": [
+      "This Joker stays",
+      "pinned to the",
+      "leftmost position"
+    ]
+  },
+  "playing_card": {
+    "text": [
+      " {C:light_black}#1# of {V:1}#2# "
+    ]
+  },
+  "purple_seal": {
+    "name": "Purple Seal",
+    "text": [
+      "Creates a {C:tarot}Tarot{} card",
+      "when {C:attention}discarded",
+      "{C:inactive}(Must have room)"
+    ]
+  },
+  "purple_sticker": {
+    "name": "Purple Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Purple",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "red_seal": {
+    "name": "Red Seal",
+    "text": [
+      "Retrigger this",
+      "card {C:attention}1{} time"
+    ]
+  },
+  "red_sticker": {
+    "name": "Red Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}Red",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "remove_negative": {
+    "name": "n",
+    "text": [
+      "{C:inactive,s:0.9}(Removes {C:dark_edition,s:0.9}Negative{C:inactive,s:0.9} from copy)"
+    ]
+  },
+  "rental": {
+    "name": "Rental",
+    "text": [
+      "Lose {C:money}$#1#{} at",
+      "end of round"
+    ]
+  },
+  "undiscovered_booster": {
+    "name": "Not Discovered",
+    "text": [
+      "Open this pack",
+      "in an unseeded run",
+      "to learn what it does"
+    ]
+  },
+  "undiscovered_edition": {
+    "name": "Not Discovered",
+    "text": [
+      "Find this edition",
+      "in an unseeded run",
+      "to learn what it does"
+    ]
+  },
+  "undiscovered_joker": {
+    "name": "Not Discovered",
+    "text": [
+      "Purchase or use",
+      "this card in an",
+      "unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "undiscovered_planet": {
+    "name": "Not Discovered",
+    "text": [
+      "Purchase or use",
+      "this card in an",
+      "unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "undiscovered_spectral": {
+    "name": "Not Discovered",
+    "text": [
+      "Purchase or use",
+      "this card in an",
+      "unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "undiscovered_tag": {
+    "name": "Not Discovered",
+    "text": [
+      "Use this tag in",
+      "an unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "undiscovered_tarot": {
+    "name": "Not Discovered",
+    "text": [
+      "Purchase or use",
+      "this card in an",
+      "unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "undiscovered_voucher": {
+    "name": "Not Discovered",
+    "text": [
+      "Redeem this",
+      "voucher in an",
+      "unseeded run to",
+      "learn what it does"
+    ]
+  },
+  "white_sticker": {
+    "name": "White Sticker",
+    "text": [
+      "Used this Joker",
+      "to win on {C:attention}White",
+      "{C:attention}Stake{} difficulty"
+    ]
+  },
+  "wip_locked": {
+    "name": "Locked",
+    "text": [
+      "Work in",
+      "progress"
+    ]
+  }
+}

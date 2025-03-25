@@ -1,0 +1,38 @@
+{
+  "e_base": {
+    "name": "Base",
+    "text": [
+      "No extra effects"
+    ]
+  },
+  "e_foil": {
+    "name": "Foil",
+    "text": [
+      "{C:chips}+#1#{} chips"
+    ]
+  },
+  "e_holo": {
+    "name": "Holographic",
+    "text": [
+      "{C:mult}+#1#{} Mult"
+    ]
+  },
+  "e_negative": {
+    "name": "Negative",
+    "text": [
+      "{C:dark_edition}+#1#{} Joker slot"
+    ]
+  },
+  "e_negative_consumable": {
+    "name": "Negative",
+    "text": [
+      "{C:dark_edition}+#1#{} consumable slot"
+    ]
+  },
+  "e_polychrome": {
+    "name": "Polychrome",
+    "text": [
+      "{X:mult,C:white} X#1# {} Mult"
+    ]
+  }
+}

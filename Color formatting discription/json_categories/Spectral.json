@@ -1,0 +1,150 @@
+{
+  "c_ankh": {
+    "name": "Ankh",
+    "text": [
+      "Create a copy of a",
+      "random {C:attention}Joker{}, destroy",
+      "all other Jokers"
+    ]
+  },
+  "c_aura": {
+    "name": "Aura",
+    "text": [
+      "Add {C:dark_edition}Foil{}, {C:dark_edition}Holographic{},",
+      "or {C:dark_edition}Polychrome{} effect to",
+      "{C:attention}1{} selected card in hand"
+    ]
+  },
+  "c_black_hole": {
+    "name": "Black Hole",
+    "text": [
+      "Upgrade every",
+      "{C:legendary,E:1}poker hand",
+      "by {C:attention}1{} level"
+    ]
+  },
+  "c_cryptid": {
+    "name": "Cryptid",
+    "text": [
+      "Create {C:attention}#1#{} copies of",
+      "{C:attention}1{} selected card",
+      "in your hand"
+    ]
+  },
+  "c_deja_vu": {
+    "name": "Deja Vu",
+    "text": [
+      "Add a {C:red}Red Seal{}",
+      "to {C:attention}1{} selected",
+      "card in your hand"
+    ]
+  },
+  "c_ectoplasm": {
+    "name": "Ectoplasm",
+    "text": [
+      "Add {C:dark_edition}Negative{} to",
+      "a random {C:attention}Joker,",
+      "{C:red}-#1#{} hand size"
+    ]
+  },
+  "c_familiar": {
+    "name": "Familiar",
+    "text": [
+      "Destroy {C:attention}1{} random",
+      "card in your hand, add",
+      "{C:attention}#1#{} random {C:attention}Enhanced face",
+      "{C:attention}cards{} to your hand"
+    ]
+  },
+  "c_grim": {
+    "name": "Grim",
+    "text": [
+      "Destroy {C:attention}1{} random",
+      "card in your hand,",
+      "add {C:attention}#1#{} random {C:attention}Enhanced",
+      "{C:attention}Aces{} to your hand"
+    ]
+  },
+  "c_hex": {
+    "name": "Hex",
+    "text": [
+      "Add {C:dark_edition}Polychrome{} to a",
+      "random {C:attention}Joker{}, destroy",
+      "all other Jokers"
+    ]
+  },
+  "c_immolate": {
+    "name": "Immolate",
+    "text": [
+      "Destroys {C:attention}#1#{} random",
+      "cards in hand,",
+      "gain {C:money}$#2#"
+    ]
+  },
+  "c_incantation": {
+    "name": "Incantation",
+    "text": [
+      "Destroy {C:attention}1{} random",
+      "card in your hand, add {C:attention}#1#",
+      "random {C:attention}Enhanced numbered",
+      "{C:attention}cards{} to your hand"
+    ]
+  },
+  "c_medium": {
+    "name": "Medium",
+    "text": [
+      "Add a {C:purple}Purple Seal{}",
+      "to {C:attention}1{} selected",
+      "card in your hand"
+    ]
+  },
+  "c_ouija": {
+    "name": "Ouija",
+    "text": [
+      "Converts all cards",
+      "in hand to a single",
+      "random {C:attention}rank",
+      "{C:red}-1{} hand size"
+    ]
+  },
+  "c_sigil": {
+    "name": "Sigil",
+    "text": [
+      "Converts all cards",
+      "in hand to a single",
+      "random {C:attention}suit"
+    ]
+  },
+  "c_soul": {
+    "name": "The Soul",
+    "text": [
+      "Creates a",
+      "{C:legendary,E:1}Legendary{} Joker",
+      "{C:inactive}(Must have room)"
+    ]
+  },
+  "c_talisman": {
+    "name": "Talisman",
+    "text": [
+      "Add a {C:attention}Gold Seal{}",
+      "to {C:attention}1{} selected",
+      "card in your hand"
+    ]
+  },
+  "c_trance": {
+    "name": "Trance",
+    "text": [
+      "Add a {C:blue}Blue Seal{}",
+      "to {C:attention}1{} selected",
+      "card in your hand"
+    ]
+  },
+  "c_wraith": {
+    "name": "Wraith",
+    "text": [
+      "Creates a random",
+      "{C:red}Rare{C:attention} Joker{},",
+      "sets money to {C:money}$0"
+    ]
+  }
+}

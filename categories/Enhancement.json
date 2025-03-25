@@ -1,0 +1,111 @@
+{
+  "Enhancement": {
+    "image_folder": "/assets/enhancements/",
+    "items": [
+      {
+        "id": "enhancements_1",
+        "name": "Bonus",
+        "appearance": "enhancer_bonus.png",
+        "effect": "<b><span class=\"hl-mult\">+4</span>&nbsp;Mult</b>",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_2",
+        "name": "Glass",
+        "appearance": "enhancer_glass.png",
+        "effect": "x2 Mult, 1 in 4 chance to destroy card",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_3",
+        "name": "Gold",
+        "appearance": "enhancer_gold.png",
+        "effect": "<b><span class=\"hl-mult\">+1</span>&nbsp;Mult</b> and <span class=\"hl-chips\"><b>+15</b></span>&nbsp;<b>Chips</b>",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_4",
+        "name": "Lucky",
+        "appearance": "enhancer_lucky.png",
+        "effect": "1 in 5 chance for +20 Mult. 1 in 15 chance to win $20",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_5",
+        "name": "Mult",
+        "appearance": "enhancer_mult.png",
+        "effect": "<b><span class=\"hl-mult\">+2</span>&nbsp;Mult</b> and <span class=\"hl-chips\"><b>+20</b></span>&nbsp;<b>Chips</b>",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_6",
+        "name": "Steel",
+        "appearance": "enhancer_steel.png",
+        "effect": "x1.5 Mult while this card stays in hand",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      },
+      {
+        "id": "enhancements_7",
+        "name": "Stone",
+        "appearance": "enhancer_stone.png",
+        "effect": "+50 Chips, no rank or suit",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": "Note that Stone cards have no rank or suit, rather than being their own. Stone cards secretly retain a rank and suit like other playing cards, but they cannot be determined or used in scoring until the Stone enhancement is cleared or replaced.",
+        "additional": null,
+        "related_items": []
+      },
+      {
+        "id": "enhancements_8",
+        "name": "Wild",
+        "appearance": "enhancer_wild.png",
+        "effect": "Can be used as any suit",
+        "category": "Enhancement",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": "",
+        "related_items": []
+      }
+    ]
+  }
+}

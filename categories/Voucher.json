@@ -1,0 +1,247 @@
+{
+  "Voucher": {
+    "image_folder": "/assets/vouchers/",
+    "items": [
+      {
+        "id": "voucher_1",
+        "name": "Overstock",
+        "appearance": "1-overstock.png",
+        "effect": "+1 card slot available in shop",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Overstock Plus"
+        ]
+      },
+      {
+        "id": "voucher_2",
+        "name": "Clearance Sale",
+        "appearance": "4-clearance-sale.png",
+        "effect": "All cards and packs in shop are 25% off",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Liquidation"
+        ]
+      },
+      {
+        "id": "voucher_3",
+        "name": "Hone",
+        "appearance": "5-hone.png",
+        "effect": "Foil, Holographic, and Polychrome cards appear 2X more often",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Glow Up"
+        ]
+      },
+      {
+        "id": "voucher_4",
+        "name": "Reroll Surplus",
+        "appearance": "9-reroll-surplus.png",
+        "effect": "Rerolls cost $2 less",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Reroll Glut"
+        ]
+      },
+      {
+        "id": "voucher_5",
+        "name": "Crystal Ball",
+        "appearance": "11-crystal-ball.png",
+        "effect": "+1 consumable slot",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Omen Globe"
+        ]
+      },
+      {
+        "id": "voucher_6",
+        "name": "Telescope",
+        "appearance": "12-telescope.png",
+        "effect": "Celestial Packs always contain the Planet card for your most played Poker Hand",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Observatory"
+        ]
+      },
+      {
+        "id": "voucher_7",
+        "name": "Grabber",
+        "appearance": "6-grabber.png",
+        "effect": "Permanently gain +1 hand per round",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Nacho Tong"
+        ]
+      },
+      {
+        "id": "voucher_8",
+        "name": "Wasteful",
+        "appearance": "7-wasteful.png",
+        "effect": "Permanently gain +1 discard per round",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Recyclomancy"
+        ]
+      },
+      {
+        "id": "voucher_9",
+        "name": "Tarot Merchant",
+        "appearance": "2-tarot-merchant.png",
+        "effect": "Tarot cards appear 2X more frequently in the shop",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Tarot Tycoon"
+        ]
+      },
+      {
+        "id": "voucher_10",
+        "name": "Planet Merchant",
+        "appearance": "3-planet-merchant.png",
+        "effect": "Planet cards appear 2X more frequently in the shop",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Planet Tycoon"
+        ]
+      },
+      {
+        "id": "voucher_11",
+        "name": "Seed Money",
+        "appearance": "10-seed-money.png",
+        "effect": "Raise the cap on interest earned per round to $10",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Money Tree"
+        ]
+      },
+      {
+        "id": "voucher_12",
+        "name": "Blank",
+        "appearance": "8-blank.png",
+        "effect": "Does nothing? ",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Antimatter"
+        ]
+      },
+      {
+        "id": "voucher_13",
+        "name": "Magic Trick",
+        "appearance": "13-magic-trick.png",
+        "effect": "Playing cards can be purchased from the Shop",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Illusion"
+        ]
+      },
+      {
+        "id": "voucher_14",
+        "name": "Hieroglyph",
+        "appearance": "14-hieroglyph.png",
+        "effect": "-1 Ante, -1 hand per round",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Petroglyph"
+        ]
+      },
+      {
+        "id": "voucher_15",
+        "name": "Director's Cut",
+        "appearance": "15-directors-cut.png",
+        "effect": "Reroll Boss Blind 1 time per Ante. $10 per roll",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Retcon"
+        ]
+      },
+      {
+        "id": "voucher_16",
+        "name": "Paint Brush",
+        "appearance": "vourcher_paintbrush.png",
+        "effect": "+1 hand size",
+        "category": "Voucher",
+        "type": null,
+        "rarity": null,
+        "cost": null,
+        "unlock_requirement": null,
+        "additional": null,
+        "related_items": [
+          "Palette"
+        ]
+      }
+    ]
+  }
+}
