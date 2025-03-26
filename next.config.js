@@ -12,6 +12,13 @@ const nextConfig = {
   },
   trailingSlash: true,  // Better for static hosting
   compress: true,  // Enable compression
+  // Enable build caching
+  experimental: {
+    turbotrace: {
+      logLevel: 'error'
+    },
+    turboCaching: true,
+  },
 }
 
 // Suppress the punycode warning
