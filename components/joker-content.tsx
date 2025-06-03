@@ -241,12 +241,13 @@ export function JokerContent({ data }: JokerContentProps) {
     "Perkeo": "!!"
   }
 
+  const handleItemClick = useCallback((itemToSelect: typeof sourceItems[0]) => {
+    setSelected(itemToSelect);
+  }, []); // setSelected from useState is stable
+
   const categoryLayoutItems = useMemo(() => {
     return sourceItems.map((item) => {
-      const handleClick = useCallback(() => {
-        setSelected(item);
-      }, [item]); // setSelected is stable, item is the dependency
-
+      const parsedCost = item.cost ? parseInt(item.cost.replace('$', ''), 10) : NaN;
       // This is the structure for items passed to CategoryLayout
       return {
         id: item.id,
@@ -255,12 +256,12 @@ export function JokerContent({ data }: JokerContentProps) {
         rarity: item.rarity || "Common",
         type: jokerTypes[item.name] || "", // Use the jokerTypes map
         unlockRequirement: item.unlock_requirement || undefined,
-        cost: item.cost,
+        cost: isNaN(parsedCost) ? undefined : parsedCost,
         selected: item.id === selected.id, // Crucial for highlighting selection
-        onClick: handleClick,
+        onClick: () => handleItemClick(item),
       };
     });
-  }, [sourceItems, selected.id]); // Dependencies for useMemo
+  }, [sourceItems, selected.id, handleItemClick]); // Dependencies for useMemo
 
   return (
     <CategoryLayout
