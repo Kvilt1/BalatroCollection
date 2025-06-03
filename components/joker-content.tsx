@@ -1,22 +1,22 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useMemo, useCallback } from "react" // Import useMemo and useCallback
 import Image from "next/image"
 import { CategoryLayout } from "@/components/category-layout"
 import { UnlockRequirement } from "./unlock-requirement"
-import { cn } from "@/lib/utils"
 import { Joker } from "@/types/joker"
 import { EffectText } from "./effect-text"
 
 interface JokerItem {
   id: string
   name: string
-  description: string
+  description: string // Original effect is now description
   rarity: string
   type: string
   unlockRequirement?: string
   selected: boolean
   onClick: () => void
+  cost?: string | null // Added cost to JokerItem
 }
 
 interface JokerContentProps {
@@ -84,8 +84,8 @@ function highlightGameTerms(text: string) {
 }
 
 export function JokerContent({ data }: JokerContentProps) {
-  const { image_folder, items } = data
-  const [selected, setSelected] = useState(items[0])
+  const { image_folder, items: sourceItems } = data // Changed 'items' to 'sourceItems'
+  const [selected, setSelected] = useState(sourceItems[0])
 
   // Map of joker names to their types
   const jokerTypes: { [key: string]: string } = {
@@ -241,26 +241,34 @@ export function JokerContent({ data }: JokerContentProps) {
     "Perkeo": "!!"
   }
 
+  const categoryLayoutItems = useMemo(() => {
+    return sourceItems.map((item) => {
+      const handleClick = useCallback(() => {
+        setSelected(item);
+      }, [item]); // setSelected is stable, item is the dependency
+
+      // This is the structure for items passed to CategoryLayout
+      return {
+        id: item.id,
+        name: item.name,
+        description: item.effect, // Pass original effect as description
+        rarity: item.rarity || "Common",
+        type: jokerTypes[item.name] || "", // Use the jokerTypes map
+        unlockRequirement: item.unlock_requirement || undefined,
+        cost: item.cost,
+        selected: item.id === selected.id, // Crucial for highlighting selection
+        onClick: handleClick,
+      };
+    });
+  }, [sourceItems, selected.id]); // Dependencies for useMemo
+
   return (
     <CategoryLayout
       title="Joker"
-      items={items.map((item) => {
-        const itemData: JokerItem = {
-          id: item.id,
-          name: item.name,
-          description: item.effect,
-          rarity: item.rarity || "Common",
-          type: jokerTypes[item.name] || "",
-          selected: item.id === selected.id,
-          onClick: () => setSelected(item),
-        }
-        if (item.unlock_requirement) {
-          itemData.unlockRequirement = item.unlock_requirement
-        }
-        return itemData
-      })}
+      items={categoryLayoutItems} // Use the new memoized variable
       showRarityFilter={true}
       showTypeFilter={true}
+      // highlightText prop will be addressed in a subsequent plan step - This comment is from the plan, not part of the code.
     >
       <div className="relative h-full">
         <div className="space-y-6 pb-16">

@@ -31,7 +31,7 @@ interface CategoryLayoutProps {
   showRarityFilter?: boolean
   showTypeFilter?: boolean
   showUnlockUI?: boolean
-  highlightText?: (text: string) => string
+  // highlightText?: (text: string) => string; // Remove this line
   sortOptions?: string[]
 }
 
@@ -44,7 +44,7 @@ export function CategoryLayout({
   showRarityFilter = false,
   showTypeFilter = false,
   showUnlockUI = true,
-  highlightText,
+  // highlightText, // Remove this line
   sortOptions = ["id", "name", "rarity", "type"]
 }: CategoryLayoutProps) {
   const [items, setItems] = useState(initialItems)
@@ -231,7 +231,11 @@ export function CategoryLayout({
                         <h3 className="font-semibold">{item.name}</h3>
                         <div className="h-px bg-white/5 mt-2" />
                       </div>
-                      <EffectText text={item.description} className="text-sm text-white/50" highlight={highlightText} />
+                      <EffectText
+                        text={item.description}
+                        className="text-sm text-white/50"
+                        // highlight={highlightText} // Remove this prop
+                      />
                       {item.rarity && (
                         <div>
                           <div className="h-px bg-white/5 mb-2" />
